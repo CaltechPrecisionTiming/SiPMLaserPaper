@@ -1,0 +1,93 @@
+{
+//=========Macro generated from canvas: c1/c1
+//=========  (Thu Aug  3 04:06:04 2017) by ROOT version5.34/36
+   TCanvas *c1 = new TCanvas("c1", "c1",618,229,700,529);
+   gStyle->SetOptStat(0);
+   gStyle->SetOptTitle(0);
+   c1->Range(-1.18625,-121.4063,-1.08375,1092.656);
+   c1->SetFillColor(0);
+   c1->SetBorderMode(0);
+   c1->SetBorderSize(2);
+   c1->SetFrameBorderMode(0);
+   c1->SetFrameBorderMode(0);
+   
+   TH1F *htemp__1__1 = new TH1F("htemp__1__1","t3gausroot-t2gausroot",50,-1.176,-1.094);
+   htemp__1__1->SetBinContent(4,1);
+   htemp__1__1->SetBinContent(7,4);
+   htemp__1__1->SetBinContent(8,6);
+   htemp__1__1->SetBinContent(9,13);
+   htemp__1__1->SetBinContent(10,26);
+   htemp__1__1->SetBinContent(11,57);
+   htemp__1__1->SetBinContent(12,72);
+   htemp__1__1->SetBinContent(13,117);
+   htemp__1__1->SetBinContent(14,195);
+   htemp__1__1->SetBinContent(15,298);
+   htemp__1__1->SetBinContent(16,437);
+   htemp__1__1->SetBinContent(17,503);
+   htemp__1__1->SetBinContent(18,684);
+   htemp__1__1->SetBinContent(19,806);
+   htemp__1__1->SetBinContent(20,910);
+   htemp__1__1->SetBinContent(21,917);
+   htemp__1__1->SetBinContent(22,925);
+   htemp__1__1->SetBinContent(23,863);
+   htemp__1__1->SetBinContent(24,727);
+   htemp__1__1->SetBinContent(25,670);
+   htemp__1__1->SetBinContent(26,513);
+   htemp__1__1->SetBinContent(27,360);
+   htemp__1__1->SetBinContent(28,263);
+   htemp__1__1->SetBinContent(29,188);
+   htemp__1__1->SetBinContent(30,140);
+   htemp__1__1->SetBinContent(31,108);
+   htemp__1__1->SetBinContent(32,62);
+   htemp__1__1->SetBinContent(33,56);
+   htemp__1__1->SetBinContent(34,24);
+   htemp__1__1->SetBinContent(35,16);
+   htemp__1__1->SetBinContent(36,15);
+   htemp__1__1->SetBinContent(37,10);
+   htemp__1__1->SetBinContent(38,3);
+   htemp__1__1->SetBinContent(39,1);
+   htemp__1__1->SetBinContent(40,3);
+   htemp__1__1->SetBinContent(41,1);
+   htemp__1__1->SetBinContent(42,1);
+   htemp__1__1->SetBinContent(43,1);
+   htemp__1__1->SetBinContent(44,1);
+   htemp__1__1->SetBinContent(45,1);
+   htemp__1__1->SetBinContent(46,2);
+   htemp__1__1->SetEntries(10000);
+   htemp__1__1->SetDirectory(0);
+   htemp__1__1->SetStats(0);
+
+   Int_t ci;      // for color index setting
+   TColor *color; // for color definition with alpha
+   ci = TColor::GetColor("#000099");
+   htemp__1__1->SetLineColor(ci);
+   htemp__1__1->SetLineWidth(2);
+   htemp__1__1->GetXaxis()->SetTitle("Time [ns]");
+   htemp__1__1->GetXaxis()->SetRange(1,100);
+   htemp__1__1->GetXaxis()->SetLabelFont(42);
+   htemp__1__1->GetXaxis()->SetTitleSize(0.05);
+   htemp__1__1->GetXaxis()->SetTitleOffset(0.9);
+   htemp__1__1->GetXaxis()->SetTitleFont(42);
+   htemp__1__1->GetYaxis()->SetTitle("Number of Events");
+   htemp__1__1->GetYaxis()->SetLabelFont(42);
+   htemp__1__1->GetYaxis()->SetTitleSize(0.05);
+   htemp__1__1->GetYaxis()->SetTitleOffset(0.9);
+   htemp__1__1->GetYaxis()->SetTitleFont(42);
+   htemp__1__1->GetZaxis()->SetLabelFont(42);
+   htemp__1__1->GetZaxis()->SetLabelSize(0.035);
+   htemp__1__1->GetZaxis()->SetTitleSize(0.035);
+   htemp__1__1->GetZaxis()->SetTitleFont(42);
+   htemp__1__1->Draw("");
+   TLatex *   tex = new TLatex(-1.12545,711.674,"#sigma_{eff} = 7 ps");
+   //tex->SetTextFont(42);
+   tex->SetLineWidth(2);
+   tex->Draw();
+   tex = new TLatex(-1.149832,1006.3,"3x3 mm^{2} SiPM");
+   //tex->SetTextFont(42);
+   tex->SetLineWidth(2);
+   tex->Draw();
+   c1->Modified();
+   c1->cd();
+   c1->SetSelected(c1);
+   c1->ToggleToolBar();
+}
