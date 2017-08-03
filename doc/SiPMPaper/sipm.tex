@@ -17,20 +17,38 @@ approaches the total number of pixels, the SiPM experiences a slow saturation as
 the signal response slowly becomes non-linear. Total saturation occurs near the
 number of pixels in the device. 
 
-SiPMs have a thermal dark count rate ranging from X to Y, which can be strongly 
-decreased when operated at lower temperatures. Typical operational temperatures 
-range from room temperature down to about $20$ degrees Celsius. SiPMs have been
-tested for the impact of radiation damage up to an equivalent neutron rate of X, 
-and its performance have been shown to be robust up to an equivalent neutron 
-rate of Y~\cite{stuff}. It has been observed that the thermal dark count rate increases with 
-large irradiation.
+SiPMs have a typical thermal dark count rate around $1$~MHz, which can be
+strongly decreased when operated at lower temperatures. Typical operational
+temperatures range from $20$ to $30$ degrees Celsius, but can be as low as $-30$
+degrees Celsius. SiPMs have been tested for the impact of radiation damage up to
+an equivalent neutron rate of $2\times10^{14}$~$\mathrm{cm}^{2}$, and its
+performance have been shown to be robust when operated at temperatures below 
+$5$~degrees Celsius.~\cite{SiPMIrradiated1,SiPMIrradiated2}. 
+However, when operated at the same temperature, the thermal dark count rate increases
+significantly with large irradiation.
 
+The SiPMs used for our studies are Hamamatsu MPPC S12571-015P of 
+size $1\times1\mathrm{mm}^{2}$ and S12572-25C of size 
+$3\times3\mathrm{mm}^{2}$. Some relevant details of the SiPM parameters
+are summarized in Table~\ref{SiPMParameters} below.
 
-%- short generic description of SiPMs, parameter space, references, performace (light detection, linearity, rad hardness etc.
-
-%- briefly discuss digital SiPMs and potential benefits, applications in our context
-
-%- description of our SiPMs (table with parameters etc)
-
-%S12571-015P : 1x1mm^2 -> great amplitude resolution
-%S12572-25C: 3x3mm^2 -> less great amplitude resolution
+\begin{table}[!ht]
+\begin{center}
+\caption{Summary of relevant SiPM parameters.}
+\label{tab:SiPMParameters}
+\begin{tabular}{|c|c|c|}
+\hline
+Parameter & S12571-015P & S12572-25C\\
+\hline
+Photosensitive area & $1\times1\mathrm{mm}^{2}$ & $3\times3\mathrm{mm}^{2}$\\
+Pixel Pitch               & $15\mu$m                             & $25\mu$m\\
+Number of Pixels    &  4489                                      & 14400                       \\
+Dark Count Rate     &  $0.1$~MHz                            & $1$~MHz                  \\
+Gain                       & $2.3\times10^{5}$                  & $5.15\times10^{5}$  \\
+Terminal Capacitance  & $35$~pF                            & $320$~pF                  \\
+Spectral Response Range & $320$-$900$~nm         & $320$-$900$~nm     \\
+Peak Sensitivity Wavelength & $460$~nm                 & $450$~nm                 \\         
+\hline
+\end{tabular}
+\end{center}
+\end{table}
