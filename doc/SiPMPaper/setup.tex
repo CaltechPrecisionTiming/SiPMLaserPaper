@@ -43,13 +43,56 @@ are placed between the mirror and the SiPMs under test.
 
 \subsection{Setup for Timing Measurements of Scintilators with SiPM readout.}
 
-A Hamamatsu R3809U MCP-PMT~\cite{HamaMCPDataSheet} is used as the reference time 
-detector whose time resolution has been measured to be about $15$~ps~\cite{Anderson:2015gha}.
-%Did we do this?
+The experimental setup we use for the calorimetric timing measurements consists
+of a single cell of a sampling calorimeter with 29 alternating layers of LYSO
+crystal and tungsten absorber. This arrangement is known as a Shashlik sampling
+calorimeter configuration. The lateral dimensions are
+$14\times14$~$\mathrm{mm}^{2}$. The total depth of the cell is about $11.5$~cm
+with the LYSO plates having a thickness of $1.5$~mm. The same cell has been used
+to measure the timing performance in comparison to the timing performance of a
+single cube of LYSO~\cite{lysotiming}. The scintillation light from the LYSO
+plates is extracted with four wave length shifting (WLS) fibers. The fibers are
+coupled to four different types of SiPMs with 10, 15 and 25~$\mu$m pixel size
+and $1\times 1$~$\mathrm{mm}^{2}$ and $3\times 3$~$\mathrm{mm}^{2}$ sensor
+size~\cite{hama}. The SiPMs are all read out with a DRS digitizer through a
+clipping circuit as described in~\cite{aashrita}. The same clipping circuit is 
+used for all four SiPMs. We do not amplify the output
+signal of the SiPMs, only exploiting the very large light yield of the LYSO
+scintillator and the intrinsic amplification of the SiPMs. More details of the
+calorimetric performance of the Shashlik configuration are discussed in
+references~\cite{shashlik1}~and~\cite{shashlik2}.
 
+In addition to plastic WLS fibers we also tested quartz capillaries filled with
+liquid wave length shifter using DSB as a wave length shifting
+agent~\cite{capillaries}. To optically couple the quartz capillaries to the
+SiPMs we use a clear plastic fiber light guide which is connected to the end of
+the quartz capillary with a metal sleeve tube. The same clear fiber coupler is
+used for the plastic WLS fibers to maintain equivalent light collection
+efficiency. The ratio of the light collection efficiency between the plastic
+fibers and the quartz capillaries approximately scales with the ratio of the
+diameter of the plastic fiber and the liquid core of the quartz capillary. This
+ratio is about $3$ for the fibers and capillaries we used.
+
+As a timing reference we use a Photek 240 MCP-PMT. It is placed behind the
+calorimeter cell and detects secondary shower particles escaping from the
+Shashlik calorimeter cell as we did in our previous studies \cite{lysotiming}.
+The time resolution is extracted by measuring the time difference between the
+reference counter and the calorimeter cell over an ensemble of shower events.
+The time stamp for the reference counter and calorimeter cell is extracted
+from a Gaussian fit to the peak and a linear fit to the rising edge, 
+respectively, as described below in Section~\ref{sec:reco}.
+
+We measure the timing performance of the calorimeter cell with high energy
+electrons in a range between $20$~GeV~and~$200$~GeV in the CERN North Area test
+beam. The impact point of the electrons onto the calorimeter cell is measured
+with a fiber hodoscope with a precision of better than $1$~mm. The timing
+results are extracted from events impacting in the center of the calorimeter
+cell in an area of $2\times2$~mm. As we are using a single calorimeter cell, the
+containment outside this region is limited which affects the timing
+measurement.
 
 \subsection{Timestamp Reconstruction}
-
+\label{sec:reco}
 The time-stamp for all signals is reconstructed by fitting the pulse waveform
 with an appropriate functional form. For signal pulses from the MCP-PMTs, which
 exhibit a very fast rise and decay, we fit a Gaussian function to a $1.5$~ns
@@ -57,5 +100,5 @@ window around the peak of the pulse and extract the time-stamp as the mean
 parameter of the Gaussian function. For signal pulses from the SiPM sensors, we
 fit a linear function to time sample points between $10\%$ and $60\%$ of the
 pulse maximum and the time-stamp is assigned as the time at which the fitted
-linear function rises to $30\%$ of the pulse maximum. More details of the
+linear function rises to half of the pulse maximum. More details of the
 time-stamp reconstruction can be found in reference~\cite{Anderson:2015gha}.
