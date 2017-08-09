@@ -1,31 +1,32 @@
 void PlotSiPMTres()
 {
 
-gStyle->SetOptStat(0);
+  gStyle->SetOptStat(0);
+  
+
+  TFile *_file0 = TFile::Open("SiPMdata.root");
 
 
-TFile *_file0 = TFile::Open("SiPMdata.root");
 
-
-
- data->Draw("1000*tree_DSB1_time_1:tree_DSB1_ch1_amp>>ch1(1800,0,400,600,0,400)","");//DSB+CAP
- data->Draw("1000*tree_DSB1_time_1:tree_DSB1_ch1_amp>>DSB1ch1(1800,0,400,600,0,400)","");
- data->Draw("1000*tree_Cap_time_1:tree_Cap_ch1_amp>>Capch1(1800,0,400,600,0,400)","");
- ch1->Add(Capch1);
-TF1 *f1 = new TF1("f1","[2]/(x**0.5)+[1]/x+[0]");
-ch1->Fit(f1,"","",10,40.0);
-ch1->GetFunction("f1")->SetLineColor(kBlack);
-
-DSB1ch1->SetMarkerColor(kBlack);
-DSB1ch1->SetMarkerStyle(8);
-DSB1ch1->SetMarkerSize(1); 
- DSB1ch1->GetXaxis()->SetTitleSize(0.05);
- DSB1ch1->GetXaxis()->SetLabelSize(0.04);
- DSB1ch1->GetXaxis()->SetTitleOffset(0.9);
- DSB1ch1->GetYaxis()->SetTitleSize(0.05);
- DSB1ch1->GetYaxis()->SetLabelSize(0.04);
- DSB1ch1->GetYaxis()->SetTitleOffset(0.9);
-
+  TTree *data = (TTree*)_file0->Get("data");
+  data->Draw("1000*tree_DSB1_time_1:tree_DSB1_ch1_amp>>ch1(1800,0,400,600,0,400)","");//DSB+CAP
+  data->Draw("1000*tree_DSB1_time_1:tree_DSB1_ch1_amp>>DSB1ch1(1800,0,400,600,0,400)","");
+  data->Draw("1000*tree_Cap_time_1:tree_Cap_ch1_amp>>Capch1(1800,0,400,600,0,400)","");
+  ch1->Add(Capch1);
+  TF1 *f1 = new TF1("f1","[2]/(x**0.5)+[1]/x+[0]");
+  ch1->Fit(f1,"","",10,40.0);
+  ch1->GetFunction("f1")->SetLineColor(kBlack);
+  
+  DSB1ch1->SetMarkerColor(kBlack);
+  DSB1ch1->SetMarkerStyle(8);
+  DSB1ch1->SetMarkerSize(1); 
+  DSB1ch1->GetXaxis()->SetTitleSize(0.05);
+  DSB1ch1->GetXaxis()->SetLabelSize(0.04);
+  DSB1ch1->GetXaxis()->SetTitleOffset(0.9);
+  DSB1ch1->GetYaxis()->SetTitleSize(0.05);
+  DSB1ch1->GetYaxis()->SetLabelSize(0.04);
+  DSB1ch1->GetYaxis()->SetTitleOffset(0.9);
+  
 
 
 Capch1->SetMarkerColor(kBlack);
@@ -219,24 +220,24 @@ leg->SetLineColor(kWhite);
  leg->SetTextSize(0.04);
 //leg->AddEntry(Laserch1,"Laser Ch1","p");
 //leg->AddEntry(Laserch4,"Laser Ch4","p"); 
-leg->AddEntry(DSB1ch1,"ch1, SiPM L1(15 mu), DSB","p");
-leg->AddEntry(DSB1ch2,"ch2, SiPM L2(25 mu), DSB","p");
-leg->AddEntry(DSB1ch3,"ch3, SiPM S2(10 mu), DSB","p");
-leg->AddEntry(DSB1ch4,"ch4, SiPM S1(15 mu), DSB","p");
-leg->AddEntry(Capch1,"ch1, SiPM L1(15 mu), CAP","p");
-leg->AddEntry(Capch2,"ch2, SiPM L2(25 mu), CAP","p");
-leg->AddEntry(Capch3,"ch3, SiPM S2(10 mu), CAP","p");
-leg->AddEntry(Capch4,"ch4, SiPM S1(15 mu), CAP","p");
+leg->AddEntry(DSB1ch1,"SiPM 3x3 mm^{2}, 15 #mu m pitch, DSB fiber","p");
+leg->AddEntry(DSB1ch2,"SiPM 3x3 mm^{2}, 25 #mu m pitch, DSB fiber","p");
+leg->AddEntry(DSB1ch3,"SiPM 1x1 mm^{2}, 10 #mu m pitch, DSB fiber","p");
+leg->AddEntry(DSB1ch4,"SiPM 1x1 mm^{2}  15 #mu m pitch, DSB fiber","p");
+leg->AddEntry(Capch1,"SiPM 3x3 mm^{2}, 15 #mu m pitch, Quartz Capillary","p");
+leg->AddEntry(Capch2,"SiPM 3x3 mm^{2}, 25 #mu m pitch, Quartz Capillary","p");
+leg->AddEntry(Capch3,"SiPM 1x1 mm^{2}, 10 #mu m pitch, Quartz Capillary","p");
+leg->AddEntry(Capch4,"SiPM 1x1 mm^{2}  15 #mu m pitch, Quartz Capillary","p");
 
   
 
 
 
   
-leg->Draw();
-        c1->Update();
-   c1->SaveAs("ShashlikTimeResolution.pdf");
-   c1->SaveAs("ShashlikTimeResolution.C");
+ leg->Draw();
+ c1->Update();
+ c1->SaveAs("ShashlikTimeResolution.pdf");
+ c1->SaveAs("ShashlikTimeResolution.C");
 
 
 // leg->AddEntry(Y11ch1,"ch1, SiPM L1(15 mu), Y11","p");   
