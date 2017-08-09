@@ -1,8 +1,9 @@
 \subsection{Timing Performance Results for Laser Pulses}
 \label{sec:lasertiming}
 
-To characterize the timing performance of the SiPM devices themselves, we
-performed laser-based measurements for two types of SiPMs: a Hamamatsu
+To evaluate the impact of the intrinsic timing performance of the SiPMs
+on the time resolution measured for the sampling calorimeter signals, 
+we performed laser-based measurements for two types of SiPMs: a Hamamatsu
 S12571-015P Multi-Pixel Photon Counter (MPPC) with an area of $1\times
 1$~$\mathrm{mm}^{2}$ and pixel pitch size of $15$~$\mu$m, and a Hamamatsu
 S12572-25C MPPC with an area of $3\times 3$~$\mathrm{mm}^{2}$ and pixel pitch
@@ -18,7 +19,7 @@ in the S12571-015P and S12572-25C SiPMs.}
 \label{fig:pulses} 
 \end{figure} 
 
-Using several different ND filters we controlled the intensity of the photon 
+Using several different neutral density (ND) filters we controlled the intensity of the photon 
 beam impinging upon the SiPMs under test and achieved a large dynamic range 
 of signal sizes ranging from a single incident photon to a few hundred. In 
 Figure~\ref{fig:NPhotonPeaks}, we show the integrated charge distribution
@@ -30,7 +31,7 @@ corresponding to different number of photoelectrons detected by the SiPMs.
 \includegraphics[width=0.49\textwidth]{figures/NPhotons1.pdf} 
 \includegraphics[width=0.49\textwidth]{figures/NPhotons2.pdf} 
 \caption{The distribution of integrated charge from the SiPM sensor for data 
-taken with an neutral density (ND) filter of 1.8 (left), and an ND filter of 1.4 (right). 
+taken with an ND filter of 1.8 (left), and an ND filter of 1.4 (right). 
 A $10$~db attenuator has been used for the plot on the right. The peaks corresponding
 to different discrete numbers of photoelectrons detected by the SiPM is clearly
 evident.} 
@@ -44,7 +45,18 @@ to this distribution is taken as the time resolution measurement.
 As the number of photons impinging on the SiPM can be clearly distinguished 
 based on the amplitude or charge collected, we can study the dependence of the 
 time resolution on the number of photons. These measurements are shown in 
-Figure~\ref{fig:TimeResolutionVsNPhotons}.
+Figure~\ref{fig:TimeResolutionVsNPhotons}. The amplitude for a single
+photoelectron signal is estimated to be X~mV for the $1\times1$~$\mathrm{mm}^{2}$ 
+S12571-015P SiPM and Y~mV for 
+the $3\times 3$~$\mathrm{mm}^{2}$ S12572-25C SiPM. Using these 
+measurements, we can compare the time resolution of laser light signals on
+SiPMs from Figure~\ref{fig:TimeResolutionVsNPhotons} to the time resolution
+of electromagnetic shower signals from the WLS fiber in Figure~\ref{TimeResolution}
+and conclude that the impact of the intrinsic timing performance of 
+SiPM devices are small and a factor of X smaller. Therefore the time resolution
+of the calorimeter is dominated by the impact of the wavelength shifter
+and the increased risetime.
+
 
 
 \begin{figure}[htbp] 
@@ -59,17 +71,15 @@ using the $1\times1$~$\mathrm{mm}^{2}$ SiPM. \label{fig:TimeResolutionVsNPhotons
 \end{figure} 
 
 
-By removing all ND filters and increasing the laser output intensity to near 
+Finally, by removing all ND filters and increasing the laser output intensity to near 
 maximum, we can measure the time resolution for a very large number of photons 
 to probe for the ultimate time resolution that one could achieve with a near 
 infinitely large signal. In Figure~\ref{fig:LargeLightTimeResolution} we show 
 the SiPM time distributions for such a scenario, and observe that the resolution 
-is below the $5$~ps level. The measurement is largely dominated by the limitation
-of the digitizer electronics as its impact on the time resolution is $4$~ps. We 
-have also performed this measurement using the timestamp associated with the 
-external digital trigger signal from the laser and we obtain a result of about 
-$11$~ps indicating that the time jitter from the laser trigger signal is roughly 
-$10$~ps. 
+is $12$~ps for the $1\times1$~$\mathrm{mm}^{2}$  S12571-015P SiPM and
+$7$~ps for the $3\times 3$~$\mathrm{mm}^{2}$ S12572-25C SiPM. 
+The measurement is also impacted by the limitation
+of the digitizer electronics as its impact on the time resolution is $4$~ps. 
 
 \begin{figure}[htbp] 
 \centering
