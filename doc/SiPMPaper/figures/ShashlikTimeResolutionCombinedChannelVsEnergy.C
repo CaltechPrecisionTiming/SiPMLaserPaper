@@ -1,8 +1,8 @@
 void ShashlikTimeResolutionCombinedChannelVsEnergy()
 {
 //=========Macro generated from canvas: c1/c1
-//=========  (Wed Aug  9 18:39:53 2017) by ROOT version6.08/05
-   TCanvas *c1 = new TCanvas("c1", "c1",6,103,800,600);
+//=========  (Fri Aug 11 00:48:12 2017) by ROOT version6.08/05
+   TCanvas *c1 = new TCanvas("c1", "c1",519,95,800,600);
    gStyle->SetOptStat(0);
    c1->Range(-38.46154,-30.82051,282.0513,226.0171);
    c1->SetFillColor(0);
@@ -78,10 +78,10 @@ void ShashlikTimeResolutionCombinedChannelVsEnergy()
    Cap__2->GetZaxis()->SetTitleFont(42);
    Cap__2->Draw("same");
    
-   TLegend *leg = new TLegend(0.3,0.7,0.87,0.85,NULL,"brNDC");
+   TLegend *leg = new TLegend(0.25,0.7,0.87,0.85,NULL,"brNDC");
    leg->SetBorderSize(1);
    leg->SetTextSize(0.05);
-   leg->SetLineColor(0);
+   leg->SetLineColor(1);
    leg->SetLineStyle(1);
    leg->SetLineWidth(1);
    leg->SetFillColor(0);

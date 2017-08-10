@@ -61,13 +61,13 @@ Capch2->SetMarkerSize(1.2);
  ch3->Add(Capch3);
 TF1 *f3 = new TF1("f3","[2]/(x**0.5)+[1]/x+[0]");
 ch3->Fit(f3,"","",10,100);
-ch3->GetFunction("f3")->SetLineColor(kGreen);
+ch3->GetFunction("f3")->SetLineColor(kGreen+2);
 
-DSB1ch3->SetMarkerColor(kGreen);
+DSB1ch3->SetMarkerColor(kGreen+2);
 DSB1ch3->SetMarkerStyle(8);
 DSB1ch3->SetMarkerSize(1);
  
-Capch3->SetMarkerColor(kGreen);
+Capch3->SetMarkerColor(kGreen+2);
 Capch3->SetMarkerStyle(34);
 Capch3->SetMarkerSize(1.2);
 
@@ -215,9 +215,9 @@ ch4->SetMarkerColor(kBlue);
 
 
   
-leg = new TLegend(0.4,0.45,0.83,0.85);
-leg->SetLineColor(kWhite);
- leg->SetTextSize(0.04);
+leg = new TLegend(0.27,0.45,0.90,0.90);
+leg->SetLineColor(kBlack);
+ leg->SetTextSize(0.035);
 //leg->AddEntry(Laserch1,"Laser Ch1","p");
 //leg->AddEntry(Laserch4,"Laser Ch4","p"); 
 leg->AddEntry(DSB1ch1,"SiPM 3x3 mm^{2}, 15 #mu m pitch, DSB fiber","p");

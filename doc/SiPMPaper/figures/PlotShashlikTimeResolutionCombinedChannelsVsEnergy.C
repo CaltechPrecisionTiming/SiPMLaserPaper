@@ -58,9 +58,9 @@ TFile *_file0 = TFile::Open("SiPMdata.root");
  Cap->Draw("same");
   
   
- leg = new TLegend(0.30,0.70,0.87,0.85);
+ leg = new TLegend(0.25,0.70,0.87,0.85);
  leg->SetTextSize(0.05);
- leg->SetLineColor(kWhite);
+ leg->SetLineColor(kBlack);
  leg->AddEntry(DSB1,"Combined DSB Fibers","p");
  leg->AddEntry(Cap,"Combined Quartz Capillaries","p");
  leg->Draw();
