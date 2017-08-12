@@ -1,8 +1,8 @@
 void ShashlikTimeResolutionVsRiseTime()
 {
 //=========Macro generated from canvas: c1/c1
-//=========  (Wed Aug  9 18:00:25 2017) by ROOT version6.08/05
-   TCanvas *c1 = new TCanvas("c1", "c1",10,155,800,600);
+//=========  (Sat Aug 12 01:24:15 2017) by ROOT version6.08/05
+   TCanvas *c1 = new TCanvas("c1", "c1",4,77,800,600);
    gStyle->SetOptStat(0);
    c1->Range(-1,-87.50001,9,787.5);
    c1->SetFillColor(0);
@@ -15,19 +15,19 @@ void ShashlikTimeResolutionVsRiseTime()
    multigraph->SetName("");
    multigraph->SetTitle("");
    
-   Double_t Graph_fx1[5] = {
-   5.390289,
-   4.352716,
-   3.668646,
-   3.271307,
-   3.034147};
-   Double_t Graph_fy1[5] = {
+   Double_t Graph_fx9[5] = {
+   4.312231,
+   3.482173,
+   2.934917,
+   2.617046,
+   2.427317};
+   Double_t Graph_fy9[5] = {
    146.7129,
    95.33232,
    80.40045,
    65.3443,
    61.70853};
-   TGraph *graph = new TGraph(5,Graph_fx1,Graph_fy1);
+   TGraph *graph = new TGraph(5,Graph_fx9,Graph_fy9);
    graph->SetName("Graph");
    graph->SetTitle("Graph");
    graph->SetFillColor(1);
@@ -39,86 +39,86 @@ void ShashlikTimeResolutionVsRiseTime()
    graph->SetMarkerStyle(8);
    graph->SetMarkerSize(1.2);
    
-   TH1F *Graph_Graph1 = new TH1F("Graph_Graph1","Graph",100,2.798532,5.625903);
-   Graph_Graph1->SetMinimum(53.20809);
-   Graph_Graph1->SetMaximum(155.2134);
-   Graph_Graph1->SetDirectory(0);
-   Graph_Graph1->SetStats(0);
+   TH1F *Graph_Graph_Graph19 = new TH1F("Graph_Graph_Graph19","Graph",100,2.238826,4.500722);
+   Graph_Graph_Graph19->SetMinimum(53.20809);
+   Graph_Graph_Graph19->SetMaximum(155.2134);
+   Graph_Graph_Graph19->SetDirectory(0);
+   Graph_Graph_Graph19->SetStats(0);
 
    ci = TColor::GetColor("#000099");
-   Graph_Graph1->SetLineColor(ci);
-   Graph_Graph1->GetXaxis()->SetLabelFont(42);
-   Graph_Graph1->GetXaxis()->SetLabelSize(0.035);
-   Graph_Graph1->GetXaxis()->SetTitleSize(0.035);
-   Graph_Graph1->GetXaxis()->SetTitleFont(42);
-   Graph_Graph1->GetYaxis()->SetLabelFont(42);
-   Graph_Graph1->GetYaxis()->SetLabelSize(0.035);
-   Graph_Graph1->GetYaxis()->SetTitleSize(0.035);
-   Graph_Graph1->GetYaxis()->SetTitleFont(42);
-   Graph_Graph1->GetZaxis()->SetLabelFont(42);
-   Graph_Graph1->GetZaxis()->SetLabelSize(0.035);
-   Graph_Graph1->GetZaxis()->SetTitleSize(0.035);
-   Graph_Graph1->GetZaxis()->SetTitleFont(42);
-   graph->SetHistogram(Graph_Graph1);
+   Graph_Graph_Graph19->SetLineColor(ci);
+   Graph_Graph_Graph19->GetXaxis()->SetLabelFont(42);
+   Graph_Graph_Graph19->GetXaxis()->SetLabelSize(0.035);
+   Graph_Graph_Graph19->GetXaxis()->SetTitleSize(0.035);
+   Graph_Graph_Graph19->GetXaxis()->SetTitleFont(42);
+   Graph_Graph_Graph19->GetYaxis()->SetLabelFont(42);
+   Graph_Graph_Graph19->GetYaxis()->SetLabelSize(0.035);
+   Graph_Graph_Graph19->GetYaxis()->SetTitleSize(0.035);
+   Graph_Graph_Graph19->GetYaxis()->SetTitleFont(42);
+   Graph_Graph_Graph19->GetZaxis()->SetLabelFont(42);
+   Graph_Graph_Graph19->GetZaxis()->SetLabelSize(0.035);
+   Graph_Graph_Graph19->GetZaxis()->SetTitleSize(0.035);
+   Graph_Graph_Graph19->GetZaxis()->SetTitleFont(42);
+   graph->SetHistogram(Graph_Graph_Graph19);
    
    multigraph->Add(graph,"");
    
-   Double_t Graph_fx2[5] = {
-   4.469928,
-   2.531439,
-   1.976925,
-   1.793087,
-   1.704055};
-   Double_t Graph_fy2[5] = {
+   Double_t Graph_fx10[5] = {
+   3.575943,
+   2.025151,
+   1.58154,
+   1.43447,
+   1.363244};
+   Double_t Graph_fy10[5] = {
    249.4981,
    136.2525,
    94.58239,
    72.81868,
    62.93952};
-   graph = new TGraph(5,Graph_fx2,Graph_fy2);
+   graph = new TGraph(5,Graph_fx10,Graph_fy10);
    graph->SetName("Graph");
    graph->SetTitle("Graph");
    graph->SetFillColor(1);
    graph->SetMarkerStyle(8);
    graph->SetMarkerSize(1.2);
    
-   TH1F *Graph_Graph2 = new TH1F("Graph_Graph2","Graph",100,1.427468,4.746516);
-   Graph_Graph2->SetMinimum(44.28366);
-   Graph_Graph2->SetMaximum(268.1539);
-   Graph_Graph2->SetDirectory(0);
-   Graph_Graph2->SetStats(0);
+   TH1F *Graph_Graph_Graph210 = new TH1F("Graph_Graph_Graph210","Graph",100,1.141974,3.797212);
+   Graph_Graph_Graph210->SetMinimum(44.28366);
+   Graph_Graph_Graph210->SetMaximum(268.1539);
+   Graph_Graph_Graph210->SetDirectory(0);
+   Graph_Graph_Graph210->SetStats(0);
 
    ci = TColor::GetColor("#000099");
-   Graph_Graph2->SetLineColor(ci);
-   Graph_Graph2->GetXaxis()->SetLabelFont(42);
-   Graph_Graph2->GetXaxis()->SetLabelSize(0.035);
-   Graph_Graph2->GetXaxis()->SetTitleSize(0.035);
-   Graph_Graph2->GetXaxis()->SetTitleFont(42);
-   Graph_Graph2->GetYaxis()->SetLabelFont(42);
-   Graph_Graph2->GetYaxis()->SetLabelSize(0.035);
-   Graph_Graph2->GetYaxis()->SetTitleSize(0.035);
-   Graph_Graph2->GetYaxis()->SetTitleFont(42);
-   Graph_Graph2->GetZaxis()->SetLabelFont(42);
-   Graph_Graph2->GetZaxis()->SetLabelSize(0.035);
-   Graph_Graph2->GetZaxis()->SetTitleSize(0.035);
-   Graph_Graph2->GetZaxis()->SetTitleFont(42);
-   graph->SetHistogram(Graph_Graph2);
+   Graph_Graph_Graph210->SetLineColor(ci);
+   Graph_Graph_Graph210->GetXaxis()->SetLabelFont(42);
+   Graph_Graph_Graph210->GetXaxis()->SetLabelSize(0.035);
+   Graph_Graph_Graph210->GetXaxis()->SetTitleSize(0.035);
+   Graph_Graph_Graph210->GetXaxis()->SetTitleFont(42);
+   Graph_Graph_Graph210->GetYaxis()->SetLabelFont(42);
+   Graph_Graph_Graph210->GetYaxis()->SetLabelSize(0.035);
+   Graph_Graph_Graph210->GetYaxis()->SetTitleSize(0.035);
+   Graph_Graph_Graph210->GetYaxis()->SetTitleFont(42);
+   Graph_Graph_Graph210->GetZaxis()->SetLabelFont(42);
+   Graph_Graph_Graph210->GetZaxis()->SetLabelSize(0.035);
+   Graph_Graph_Graph210->GetZaxis()->SetTitleSize(0.035);
+   Graph_Graph_Graph210->GetZaxis()->SetTitleFont(42);
+   graph->SetHistogram(Graph_Graph_Graph210);
    
    multigraph->Add(graph,"");
    
-   Double_t Graph_fx3[5] = {
-   3.692981,
-   2.867792,
-   2.47747,
-   2.292751,
-   2.180103};
-   Double_t Graph_fy3[5] = {
+   Double_t Graph_fx11[5] = {
+   2.954385,
+   2.294234,
+   1.981976,
+   1.834201,
+   1.744082};
+   Double_t Graph_fy11[5] = {
    223.313,
    121.1411,
    92.54782,
    79.38335,
    76.43974};
-   graph = new TGraph(5,Graph_fx3,Graph_fy3);
+   graph = new TGraph(5,Graph_fx11,Graph_fy11);
    graph->SetName("Graph");
    graph->SetTitle("Graph");
    graph->SetFillColor(1);
@@ -128,43 +128,43 @@ void ShashlikTimeResolutionVsRiseTime()
    graph->SetMarkerStyle(8);
    graph->SetMarkerSize(1.2);
    
-   TH1F *Graph_Graph3 = new TH1F("Graph_Graph3","Graph",100,2.028815,3.844269);
-   Graph_Graph3->SetMinimum(61.75242);
-   Graph_Graph3->SetMaximum(238.0003);
-   Graph_Graph3->SetDirectory(0);
-   Graph_Graph3->SetStats(0);
+   TH1F *Graph_Graph_Graph311 = new TH1F("Graph_Graph_Graph311","Graph",100,1.623052,3.075415);
+   Graph_Graph_Graph311->SetMinimum(61.75242);
+   Graph_Graph_Graph311->SetMaximum(238.0003);
+   Graph_Graph_Graph311->SetDirectory(0);
+   Graph_Graph_Graph311->SetStats(0);
 
    ci = TColor::GetColor("#000099");
-   Graph_Graph3->SetLineColor(ci);
-   Graph_Graph3->GetXaxis()->SetLabelFont(42);
-   Graph_Graph3->GetXaxis()->SetLabelSize(0.035);
-   Graph_Graph3->GetXaxis()->SetTitleSize(0.035);
-   Graph_Graph3->GetXaxis()->SetTitleFont(42);
-   Graph_Graph3->GetYaxis()->SetLabelFont(42);
-   Graph_Graph3->GetYaxis()->SetLabelSize(0.035);
-   Graph_Graph3->GetYaxis()->SetTitleSize(0.035);
-   Graph_Graph3->GetYaxis()->SetTitleFont(42);
-   Graph_Graph3->GetZaxis()->SetLabelFont(42);
-   Graph_Graph3->GetZaxis()->SetLabelSize(0.035);
-   Graph_Graph3->GetZaxis()->SetTitleSize(0.035);
-   Graph_Graph3->GetZaxis()->SetTitleFont(42);
-   graph->SetHistogram(Graph_Graph3);
+   Graph_Graph_Graph311->SetLineColor(ci);
+   Graph_Graph_Graph311->GetXaxis()->SetLabelFont(42);
+   Graph_Graph_Graph311->GetXaxis()->SetLabelSize(0.035);
+   Graph_Graph_Graph311->GetXaxis()->SetTitleSize(0.035);
+   Graph_Graph_Graph311->GetXaxis()->SetTitleFont(42);
+   Graph_Graph_Graph311->GetYaxis()->SetLabelFont(42);
+   Graph_Graph_Graph311->GetYaxis()->SetLabelSize(0.035);
+   Graph_Graph_Graph311->GetYaxis()->SetTitleSize(0.035);
+   Graph_Graph_Graph311->GetYaxis()->SetTitleFont(42);
+   Graph_Graph_Graph311->GetZaxis()->SetLabelFont(42);
+   Graph_Graph_Graph311->GetZaxis()->SetLabelSize(0.035);
+   Graph_Graph_Graph311->GetZaxis()->SetTitleSize(0.035);
+   Graph_Graph_Graph311->GetZaxis()->SetTitleFont(42);
+   graph->SetHistogram(Graph_Graph_Graph311);
    
    multigraph->Add(graph,"");
    
-   Double_t Graph_fx4[5] = {
-   2.513894,
-   2.101685,
-   1.870116,
-   1.761492,
-   1.697313};
-   Double_t Graph_fy4[5] = {
+   Double_t Graph_fx12[5] = {
+   2.011115,
+   1.681348,
+   1.496093,
+   1.409194,
+   1.35785};
+   Double_t Graph_fy12[5] = {
    135.1501,
    92.25575,
    73.02962,
    62.29272,
    62.67965};
-   graph = new TGraph(5,Graph_fx4,Graph_fy4);
+   graph = new TGraph(5,Graph_fx12,Graph_fy12);
    graph->SetName("Graph");
    graph->SetTitle("Graph");
    graph->SetFillColor(1);
@@ -174,85 +174,85 @@ void ShashlikTimeResolutionVsRiseTime()
    graph->SetMarkerStyle(8);
    graph->SetMarkerSize(1.2);
    
-   TH1F *Graph_Graph4 = new TH1F("Graph_Graph4","Graph",100,1.615654,2.595552);
-   Graph_Graph4->SetMinimum(55.00698);
-   Graph_Graph4->SetMaximum(142.4359);
-   Graph_Graph4->SetDirectory(0);
-   Graph_Graph4->SetStats(0);
+   TH1F *Graph_Graph_Graph412 = new TH1F("Graph_Graph_Graph412","Graph",100,1.292524,2.076442);
+   Graph_Graph_Graph412->SetMinimum(55.00698);
+   Graph_Graph_Graph412->SetMaximum(142.4359);
+   Graph_Graph_Graph412->SetDirectory(0);
+   Graph_Graph_Graph412->SetStats(0);
 
    ci = TColor::GetColor("#000099");
-   Graph_Graph4->SetLineColor(ci);
-   Graph_Graph4->GetXaxis()->SetLabelFont(42);
-   Graph_Graph4->GetXaxis()->SetLabelSize(0.035);
-   Graph_Graph4->GetXaxis()->SetTitleSize(0.035);
-   Graph_Graph4->GetXaxis()->SetTitleFont(42);
-   Graph_Graph4->GetYaxis()->SetLabelFont(42);
-   Graph_Graph4->GetYaxis()->SetLabelSize(0.035);
-   Graph_Graph4->GetYaxis()->SetTitleSize(0.035);
-   Graph_Graph4->GetYaxis()->SetTitleFont(42);
-   Graph_Graph4->GetZaxis()->SetLabelFont(42);
-   Graph_Graph4->GetZaxis()->SetLabelSize(0.035);
-   Graph_Graph4->GetZaxis()->SetTitleSize(0.035);
-   Graph_Graph4->GetZaxis()->SetTitleFont(42);
-   graph->SetHistogram(Graph_Graph4);
+   Graph_Graph_Graph412->SetLineColor(ci);
+   Graph_Graph_Graph412->GetXaxis()->SetLabelFont(42);
+   Graph_Graph_Graph412->GetXaxis()->SetLabelSize(0.035);
+   Graph_Graph_Graph412->GetXaxis()->SetTitleSize(0.035);
+   Graph_Graph_Graph412->GetXaxis()->SetTitleFont(42);
+   Graph_Graph_Graph412->GetYaxis()->SetLabelFont(42);
+   Graph_Graph_Graph412->GetYaxis()->SetLabelSize(0.035);
+   Graph_Graph_Graph412->GetYaxis()->SetTitleSize(0.035);
+   Graph_Graph_Graph412->GetYaxis()->SetTitleFont(42);
+   Graph_Graph_Graph412->GetZaxis()->SetLabelFont(42);
+   Graph_Graph_Graph412->GetZaxis()->SetLabelSize(0.035);
+   Graph_Graph_Graph412->GetZaxis()->SetTitleSize(0.035);
+   Graph_Graph_Graph412->GetZaxis()->SetTitleFont(42);
+   graph->SetHistogram(Graph_Graph_Graph412);
    
    multigraph->Add(graph,"");
    
-   Double_t Graph_fx5[5] = {
-   6.392888,
-   5.214025,
-   2.729537,
-   2.70476,
-   2.157021};
-   Double_t Graph_fy5[5] = {
+   Double_t Graph_fx13[5] = {
+   5.11431,
+   4.17122,
+   2.183629,
+   2.163808,
+   1.725617};
+   Double_t Graph_fy13[5] = {
    1438.88,
    248.8028,
    125.4157,
    108.1745,
    93.00245};
-   graph = new TGraph(5,Graph_fx5,Graph_fy5);
+   graph = new TGraph(5,Graph_fx13,Graph_fy13);
    graph->SetName("Graph");
    graph->SetTitle("Graph");
    graph->SetFillColor(1);
    graph->SetMarkerStyle(21);
    
-   TH1F *Graph_Graph5 = new TH1F("Graph_Graph5","Graph",100,1.733435,6.816475);
-   Graph_Graph5->SetMinimum(0);
-   Graph_Graph5->SetMaximum(1573.468);
-   Graph_Graph5->SetDirectory(0);
-   Graph_Graph5->SetStats(0);
+   TH1F *Graph_Graph_Graph513 = new TH1F("Graph_Graph_Graph513","Graph",100,1.386748,5.45318);
+   Graph_Graph_Graph513->SetMinimum(0);
+   Graph_Graph_Graph513->SetMaximum(1573.468);
+   Graph_Graph_Graph513->SetDirectory(0);
+   Graph_Graph_Graph513->SetStats(0);
 
    ci = TColor::GetColor("#000099");
-   Graph_Graph5->SetLineColor(ci);
-   Graph_Graph5->GetXaxis()->SetLabelFont(42);
-   Graph_Graph5->GetXaxis()->SetLabelSize(0.035);
-   Graph_Graph5->GetXaxis()->SetTitleSize(0.035);
-   Graph_Graph5->GetXaxis()->SetTitleFont(42);
-   Graph_Graph5->GetYaxis()->SetLabelFont(42);
-   Graph_Graph5->GetYaxis()->SetLabelSize(0.035);
-   Graph_Graph5->GetYaxis()->SetTitleSize(0.035);
-   Graph_Graph5->GetYaxis()->SetTitleFont(42);
-   Graph_Graph5->GetZaxis()->SetLabelFont(42);
-   Graph_Graph5->GetZaxis()->SetLabelSize(0.035);
-   Graph_Graph5->GetZaxis()->SetTitleSize(0.035);
-   Graph_Graph5->GetZaxis()->SetTitleFont(42);
-   graph->SetHistogram(Graph_Graph5);
+   Graph_Graph_Graph513->SetLineColor(ci);
+   Graph_Graph_Graph513->GetXaxis()->SetLabelFont(42);
+   Graph_Graph_Graph513->GetXaxis()->SetLabelSize(0.035);
+   Graph_Graph_Graph513->GetXaxis()->SetTitleSize(0.035);
+   Graph_Graph_Graph513->GetXaxis()->SetTitleFont(42);
+   Graph_Graph_Graph513->GetYaxis()->SetLabelFont(42);
+   Graph_Graph_Graph513->GetYaxis()->SetLabelSize(0.035);
+   Graph_Graph_Graph513->GetYaxis()->SetTitleSize(0.035);
+   Graph_Graph_Graph513->GetYaxis()->SetTitleFont(42);
+   Graph_Graph_Graph513->GetZaxis()->SetLabelFont(42);
+   Graph_Graph_Graph513->GetZaxis()->SetLabelSize(0.035);
+   Graph_Graph_Graph513->GetZaxis()->SetTitleSize(0.035);
+   Graph_Graph_Graph513->GetZaxis()->SetTitleFont(42);
+   graph->SetHistogram(Graph_Graph_Graph513);
    
    multigraph->Add(graph,"");
    
-   Double_t Graph_fx6[5] = {
-   7.710097,
-   6.499035,
-   5.836679,
-   5.214005,
-   4.992131};
-   Double_t Graph_fy6[5] = {
+   Double_t Graph_fx14[5] = {
+   6.168078,
+   5.199228,
+   4.669343,
+   4.171204,
+   3.993705};
+   Double_t Graph_fy14[5] = {
    372.4462,
    215.9165,
    155.5174,
    141.9081,
    124.3282};
-   graph = new TGraph(5,Graph_fx6,Graph_fy6);
+   graph = new TGraph(5,Graph_fx14,Graph_fy14);
    graph->SetName("Graph");
    graph->SetTitle("Graph");
    graph->SetFillColor(1);
@@ -261,43 +261,43 @@ void ShashlikTimeResolutionVsRiseTime()
    graph->SetMarkerColor(ci);
    graph->SetMarkerStyle(21);
    
-   TH1F *Graph_Graph6 = new TH1F("Graph_Graph6","Graph",100,4.720335,7.981894);
-   Graph_Graph6->SetMinimum(99.51642);
-   Graph_Graph6->SetMaximum(397.258);
-   Graph_Graph6->SetDirectory(0);
-   Graph_Graph6->SetStats(0);
+   TH1F *Graph_Graph_Graph614 = new TH1F("Graph_Graph_Graph614","Graph",100,3.776268,6.385515);
+   Graph_Graph_Graph614->SetMinimum(99.51642);
+   Graph_Graph_Graph614->SetMaximum(397.258);
+   Graph_Graph_Graph614->SetDirectory(0);
+   Graph_Graph_Graph614->SetStats(0);
 
    ci = TColor::GetColor("#000099");
-   Graph_Graph6->SetLineColor(ci);
-   Graph_Graph6->GetXaxis()->SetLabelFont(42);
-   Graph_Graph6->GetXaxis()->SetLabelSize(0.035);
-   Graph_Graph6->GetXaxis()->SetTitleSize(0.035);
-   Graph_Graph6->GetXaxis()->SetTitleFont(42);
-   Graph_Graph6->GetYaxis()->SetLabelFont(42);
-   Graph_Graph6->GetYaxis()->SetLabelSize(0.035);
-   Graph_Graph6->GetYaxis()->SetTitleSize(0.035);
-   Graph_Graph6->GetYaxis()->SetTitleFont(42);
-   Graph_Graph6->GetZaxis()->SetLabelFont(42);
-   Graph_Graph6->GetZaxis()->SetLabelSize(0.035);
-   Graph_Graph6->GetZaxis()->SetTitleSize(0.035);
-   Graph_Graph6->GetZaxis()->SetTitleFont(42);
-   graph->SetHistogram(Graph_Graph6);
+   Graph_Graph_Graph614->SetLineColor(ci);
+   Graph_Graph_Graph614->GetXaxis()->SetLabelFont(42);
+   Graph_Graph_Graph614->GetXaxis()->SetLabelSize(0.035);
+   Graph_Graph_Graph614->GetXaxis()->SetTitleSize(0.035);
+   Graph_Graph_Graph614->GetXaxis()->SetTitleFont(42);
+   Graph_Graph_Graph614->GetYaxis()->SetLabelFont(42);
+   Graph_Graph_Graph614->GetYaxis()->SetLabelSize(0.035);
+   Graph_Graph_Graph614->GetYaxis()->SetTitleSize(0.035);
+   Graph_Graph_Graph614->GetYaxis()->SetTitleFont(42);
+   Graph_Graph_Graph614->GetZaxis()->SetLabelFont(42);
+   Graph_Graph_Graph614->GetZaxis()->SetLabelSize(0.035);
+   Graph_Graph_Graph614->GetZaxis()->SetTitleSize(0.035);
+   Graph_Graph_Graph614->GetZaxis()->SetTitleFont(42);
+   graph->SetHistogram(Graph_Graph_Graph614);
    
    multigraph->Add(graph,"");
    
-   Double_t Graph_fx7[5] = {
-   3.842098,
-   4.322503,
-   3.919666,
-   3.341736,
-   3.155716};
-   Double_t Graph_fy7[5] = {
+   Double_t Graph_fx15[5] = {
+   3.073679,
+   3.458002,
+   3.135732,
+   2.673389,
+   2.524573};
+   Double_t Graph_fy15[5] = {
    740.7095,
    296.8146,
    207.1573,
    155.3983,
    136.7898};
-   graph = new TGraph(5,Graph_fx7,Graph_fy7);
+   graph = new TGraph(5,Graph_fx15,Graph_fy15);
    graph->SetName("Graph");
    graph->SetTitle("Graph");
    graph->SetFillColor(1);
@@ -306,43 +306,43 @@ void ShashlikTimeResolutionVsRiseTime()
    graph->SetMarkerColor(ci);
    graph->SetMarkerStyle(21);
    
-   TH1F *Graph_Graph7 = new TH1F("Graph_Graph7","Graph",100,3.039038,4.439181);
-   Graph_Graph7->SetMinimum(76.39781);
-   Graph_Graph7->SetMaximum(801.1015);
-   Graph_Graph7->SetDirectory(0);
-   Graph_Graph7->SetStats(0);
+   TH1F *Graph_Graph_Graph715 = new TH1F("Graph_Graph_Graph715","Graph",100,2.43123,3.551345);
+   Graph_Graph_Graph715->SetMinimum(76.39781);
+   Graph_Graph_Graph715->SetMaximum(801.1015);
+   Graph_Graph_Graph715->SetDirectory(0);
+   Graph_Graph_Graph715->SetStats(0);
 
    ci = TColor::GetColor("#000099");
-   Graph_Graph7->SetLineColor(ci);
-   Graph_Graph7->GetXaxis()->SetLabelFont(42);
-   Graph_Graph7->GetXaxis()->SetLabelSize(0.035);
-   Graph_Graph7->GetXaxis()->SetTitleSize(0.035);
-   Graph_Graph7->GetXaxis()->SetTitleFont(42);
-   Graph_Graph7->GetYaxis()->SetLabelFont(42);
-   Graph_Graph7->GetYaxis()->SetLabelSize(0.035);
-   Graph_Graph7->GetYaxis()->SetTitleSize(0.035);
-   Graph_Graph7->GetYaxis()->SetTitleFont(42);
-   Graph_Graph7->GetZaxis()->SetLabelFont(42);
-   Graph_Graph7->GetZaxis()->SetLabelSize(0.035);
-   Graph_Graph7->GetZaxis()->SetTitleSize(0.035);
-   Graph_Graph7->GetZaxis()->SetTitleFont(42);
-   graph->SetHistogram(Graph_Graph7);
+   Graph_Graph_Graph715->SetLineColor(ci);
+   Graph_Graph_Graph715->GetXaxis()->SetLabelFont(42);
+   Graph_Graph_Graph715->GetXaxis()->SetLabelSize(0.035);
+   Graph_Graph_Graph715->GetXaxis()->SetTitleSize(0.035);
+   Graph_Graph_Graph715->GetXaxis()->SetTitleFont(42);
+   Graph_Graph_Graph715->GetYaxis()->SetLabelFont(42);
+   Graph_Graph_Graph715->GetYaxis()->SetLabelSize(0.035);
+   Graph_Graph_Graph715->GetYaxis()->SetTitleSize(0.035);
+   Graph_Graph_Graph715->GetYaxis()->SetTitleFont(42);
+   Graph_Graph_Graph715->GetZaxis()->SetLabelFont(42);
+   Graph_Graph_Graph715->GetZaxis()->SetLabelSize(0.035);
+   Graph_Graph_Graph715->GetZaxis()->SetTitleSize(0.035);
+   Graph_Graph_Graph715->GetZaxis()->SetTitleFont(42);
+   graph->SetHistogram(Graph_Graph_Graph715);
    
    multigraph->Add(graph,"");
    
-   Double_t Graph_fx8[5] = {
-   3.569329,
-   2.749218,
-   2.673666,
-   2.188232,
-   2.291208};
-   Double_t Graph_fy8[5] = {
+   Double_t Graph_fx16[5] = {
+   2.855463,
+   2.199375,
+   2.138933,
+   1.750585,
+   1.832966};
+   Double_t Graph_fy16[5] = {
    229.3731,
    133.8951,
    113.6417,
    80.12779,
    96.45752};
-   graph = new TGraph(5,Graph_fx8,Graph_fy8);
+   graph = new TGraph(5,Graph_fx16,Graph_fy16);
    graph->SetName("Graph");
    graph->SetTitle("Graph");
    graph->SetFillColor(1);
@@ -351,27 +351,385 @@ void ShashlikTimeResolutionVsRiseTime()
    graph->SetMarkerColor(ci);
    graph->SetMarkerStyle(21);
    
-   TH1F *Graph_Graph8 = new TH1F("Graph_Graph8","Graph",100,2.050122,3.707439);
-   Graph_Graph8->SetMinimum(65.20326);
-   Graph_Graph8->SetMaximum(244.2976);
-   Graph_Graph8->SetDirectory(0);
-   Graph_Graph8->SetStats(0);
+   TH1F *Graph_Graph_Graph816 = new TH1F("Graph_Graph_Graph816","Graph",100,1.640098,2.965951);
+   Graph_Graph_Graph816->SetMinimum(65.20326);
+   Graph_Graph_Graph816->SetMaximum(244.2976);
+   Graph_Graph_Graph816->SetDirectory(0);
+   Graph_Graph_Graph816->SetStats(0);
 
    ci = TColor::GetColor("#000099");
-   Graph_Graph8->SetLineColor(ci);
-   Graph_Graph8->GetXaxis()->SetLabelFont(42);
-   Graph_Graph8->GetXaxis()->SetLabelSize(0.035);
-   Graph_Graph8->GetXaxis()->SetTitleSize(0.035);
-   Graph_Graph8->GetXaxis()->SetTitleFont(42);
-   Graph_Graph8->GetYaxis()->SetLabelFont(42);
-   Graph_Graph8->GetYaxis()->SetLabelSize(0.035);
-   Graph_Graph8->GetYaxis()->SetTitleSize(0.035);
-   Graph_Graph8->GetYaxis()->SetTitleFont(42);
-   Graph_Graph8->GetZaxis()->SetLabelFont(42);
-   Graph_Graph8->GetZaxis()->SetLabelSize(0.035);
-   Graph_Graph8->GetZaxis()->SetTitleSize(0.035);
-   Graph_Graph8->GetZaxis()->SetTitleFont(42);
-   graph->SetHistogram(Graph_Graph8);
+   Graph_Graph_Graph816->SetLineColor(ci);
+   Graph_Graph_Graph816->GetXaxis()->SetLabelFont(42);
+   Graph_Graph_Graph816->GetXaxis()->SetLabelSize(0.035);
+   Graph_Graph_Graph816->GetXaxis()->SetTitleSize(0.035);
+   Graph_Graph_Graph816->GetXaxis()->SetTitleFont(42);
+   Graph_Graph_Graph816->GetYaxis()->SetLabelFont(42);
+   Graph_Graph_Graph816->GetYaxis()->SetLabelSize(0.035);
+   Graph_Graph_Graph816->GetYaxis()->SetTitleSize(0.035);
+   Graph_Graph_Graph816->GetYaxis()->SetTitleFont(42);
+   Graph_Graph_Graph816->GetZaxis()->SetLabelFont(42);
+   Graph_Graph_Graph816->GetZaxis()->SetLabelSize(0.035);
+   Graph_Graph_Graph816->GetZaxis()->SetTitleSize(0.035);
+   Graph_Graph_Graph816->GetZaxis()->SetTitleFont(42);
+   graph->SetHistogram(Graph_Graph_Graph816);
+   
+   multigraph->Add(graph,"");
+   
+   Double_t Graph_fx17[5] = {
+   4.312231,
+   3.482173,
+   2.934917,
+   2.617046,
+   2.427317};
+   Double_t Graph_fy17[5] = {
+   146.7129,
+   95.33232,
+   80.40045,
+   65.3443,
+   61.70853};
+   graph = new TGraph(5,Graph_fx17,Graph_fy17);
+   graph->SetName("Graph");
+   graph->SetTitle("Graph");
+   graph->SetFillColor(1);
+
+   ci = TColor::GetColor("#ff0000");
+   graph->SetMarkerColor(ci);
+   graph->SetMarkerStyle(8);
+   graph->SetMarkerSize(1.2);
+   
+   TH1F *Graph_Graph_Graph_Graph1917 = new TH1F("Graph_Graph_Graph_Graph1917","Graph",100,2.238826,4.500722);
+   Graph_Graph_Graph_Graph1917->SetMinimum(53.20809);
+   Graph_Graph_Graph_Graph1917->SetMaximum(155.2134);
+   Graph_Graph_Graph_Graph1917->SetDirectory(0);
+   Graph_Graph_Graph_Graph1917->SetStats(0);
+
+   ci = TColor::GetColor("#000099");
+   Graph_Graph_Graph_Graph1917->SetLineColor(ci);
+   Graph_Graph_Graph_Graph1917->GetXaxis()->SetLabelFont(42);
+   Graph_Graph_Graph_Graph1917->GetXaxis()->SetLabelSize(0.035);
+   Graph_Graph_Graph_Graph1917->GetXaxis()->SetTitleSize(0.035);
+   Graph_Graph_Graph_Graph1917->GetXaxis()->SetTitleFont(42);
+   Graph_Graph_Graph_Graph1917->GetYaxis()->SetLabelFont(42);
+   Graph_Graph_Graph_Graph1917->GetYaxis()->SetLabelSize(0.035);
+   Graph_Graph_Graph_Graph1917->GetYaxis()->SetTitleSize(0.035);
+   Graph_Graph_Graph_Graph1917->GetYaxis()->SetTitleFont(42);
+   Graph_Graph_Graph_Graph1917->GetZaxis()->SetLabelFont(42);
+   Graph_Graph_Graph_Graph1917->GetZaxis()->SetLabelSize(0.035);
+   Graph_Graph_Graph_Graph1917->GetZaxis()->SetTitleSize(0.035);
+   Graph_Graph_Graph_Graph1917->GetZaxis()->SetTitleFont(42);
+   graph->SetHistogram(Graph_Graph_Graph_Graph1917);
+   
+   multigraph->Add(graph,"");
+   
+   Double_t Graph_fx18[5] = {
+   3.575943,
+   2.025151,
+   1.58154,
+   1.43447,
+   1.363244};
+   Double_t Graph_fy18[5] = {
+   249.4981,
+   136.2525,
+   94.58239,
+   72.81868,
+   62.93952};
+   graph = new TGraph(5,Graph_fx18,Graph_fy18);
+   graph->SetName("Graph");
+   graph->SetTitle("Graph");
+   graph->SetFillColor(1);
+   graph->SetMarkerStyle(8);
+   graph->SetMarkerSize(1.2);
+   
+   TH1F *Graph_Graph_Graph_Graph21018 = new TH1F("Graph_Graph_Graph_Graph21018","Graph",100,1.141974,3.797212);
+   Graph_Graph_Graph_Graph21018->SetMinimum(44.28366);
+   Graph_Graph_Graph_Graph21018->SetMaximum(268.1539);
+   Graph_Graph_Graph_Graph21018->SetDirectory(0);
+   Graph_Graph_Graph_Graph21018->SetStats(0);
+
+   ci = TColor::GetColor("#000099");
+   Graph_Graph_Graph_Graph21018->SetLineColor(ci);
+   Graph_Graph_Graph_Graph21018->GetXaxis()->SetLabelFont(42);
+   Graph_Graph_Graph_Graph21018->GetXaxis()->SetLabelSize(0.035);
+   Graph_Graph_Graph_Graph21018->GetXaxis()->SetTitleSize(0.035);
+   Graph_Graph_Graph_Graph21018->GetXaxis()->SetTitleFont(42);
+   Graph_Graph_Graph_Graph21018->GetYaxis()->SetLabelFont(42);
+   Graph_Graph_Graph_Graph21018->GetYaxis()->SetLabelSize(0.035);
+   Graph_Graph_Graph_Graph21018->GetYaxis()->SetTitleSize(0.035);
+   Graph_Graph_Graph_Graph21018->GetYaxis()->SetTitleFont(42);
+   Graph_Graph_Graph_Graph21018->GetZaxis()->SetLabelFont(42);
+   Graph_Graph_Graph_Graph21018->GetZaxis()->SetLabelSize(0.035);
+   Graph_Graph_Graph_Graph21018->GetZaxis()->SetTitleSize(0.035);
+   Graph_Graph_Graph_Graph21018->GetZaxis()->SetTitleFont(42);
+   graph->SetHistogram(Graph_Graph_Graph_Graph21018);
+   
+   multigraph->Add(graph,"");
+   
+   Double_t Graph_fx19[5] = {
+   2.954385,
+   2.294234,
+   1.981976,
+   1.834201,
+   1.744082};
+   Double_t Graph_fy19[5] = {
+   223.313,
+   121.1411,
+   92.54782,
+   79.38335,
+   76.43974};
+   graph = new TGraph(5,Graph_fx19,Graph_fy19);
+   graph->SetName("Graph");
+   graph->SetTitle("Graph");
+   graph->SetFillColor(1);
+
+   ci = TColor::GetColor("#009900");
+   graph->SetMarkerColor(ci);
+   graph->SetMarkerStyle(8);
+   graph->SetMarkerSize(1.2);
+   
+   TH1F *Graph_Graph_Graph_Graph31119 = new TH1F("Graph_Graph_Graph_Graph31119","Graph",100,1.623052,3.075415);
+   Graph_Graph_Graph_Graph31119->SetMinimum(61.75242);
+   Graph_Graph_Graph_Graph31119->SetMaximum(238.0003);
+   Graph_Graph_Graph_Graph31119->SetDirectory(0);
+   Graph_Graph_Graph_Graph31119->SetStats(0);
+
+   ci = TColor::GetColor("#000099");
+   Graph_Graph_Graph_Graph31119->SetLineColor(ci);
+   Graph_Graph_Graph_Graph31119->GetXaxis()->SetLabelFont(42);
+   Graph_Graph_Graph_Graph31119->GetXaxis()->SetLabelSize(0.035);
+   Graph_Graph_Graph_Graph31119->GetXaxis()->SetTitleSize(0.035);
+   Graph_Graph_Graph_Graph31119->GetXaxis()->SetTitleFont(42);
+   Graph_Graph_Graph_Graph31119->GetYaxis()->SetLabelFont(42);
+   Graph_Graph_Graph_Graph31119->GetYaxis()->SetLabelSize(0.035);
+   Graph_Graph_Graph_Graph31119->GetYaxis()->SetTitleSize(0.035);
+   Graph_Graph_Graph_Graph31119->GetYaxis()->SetTitleFont(42);
+   Graph_Graph_Graph_Graph31119->GetZaxis()->SetLabelFont(42);
+   Graph_Graph_Graph_Graph31119->GetZaxis()->SetLabelSize(0.035);
+   Graph_Graph_Graph_Graph31119->GetZaxis()->SetTitleSize(0.035);
+   Graph_Graph_Graph_Graph31119->GetZaxis()->SetTitleFont(42);
+   graph->SetHistogram(Graph_Graph_Graph_Graph31119);
+   
+   multigraph->Add(graph,"");
+   
+   Double_t Graph_fx20[5] = {
+   2.011115,
+   1.681348,
+   1.496093,
+   1.409194,
+   1.35785};
+   Double_t Graph_fy20[5] = {
+   135.1501,
+   92.25575,
+   73.02962,
+   62.29272,
+   62.67965};
+   graph = new TGraph(5,Graph_fx20,Graph_fy20);
+   graph->SetName("Graph");
+   graph->SetTitle("Graph");
+   graph->SetFillColor(1);
+
+   ci = TColor::GetColor("#0000ff");
+   graph->SetMarkerColor(ci);
+   graph->SetMarkerStyle(8);
+   graph->SetMarkerSize(1.2);
+   
+   TH1F *Graph_Graph_Graph_Graph41220 = new TH1F("Graph_Graph_Graph_Graph41220","Graph",100,1.292524,2.076442);
+   Graph_Graph_Graph_Graph41220->SetMinimum(55.00698);
+   Graph_Graph_Graph_Graph41220->SetMaximum(142.4359);
+   Graph_Graph_Graph_Graph41220->SetDirectory(0);
+   Graph_Graph_Graph_Graph41220->SetStats(0);
+
+   ci = TColor::GetColor("#000099");
+   Graph_Graph_Graph_Graph41220->SetLineColor(ci);
+   Graph_Graph_Graph_Graph41220->GetXaxis()->SetLabelFont(42);
+   Graph_Graph_Graph_Graph41220->GetXaxis()->SetLabelSize(0.035);
+   Graph_Graph_Graph_Graph41220->GetXaxis()->SetTitleSize(0.035);
+   Graph_Graph_Graph_Graph41220->GetXaxis()->SetTitleFont(42);
+   Graph_Graph_Graph_Graph41220->GetYaxis()->SetLabelFont(42);
+   Graph_Graph_Graph_Graph41220->GetYaxis()->SetLabelSize(0.035);
+   Graph_Graph_Graph_Graph41220->GetYaxis()->SetTitleSize(0.035);
+   Graph_Graph_Graph_Graph41220->GetYaxis()->SetTitleFont(42);
+   Graph_Graph_Graph_Graph41220->GetZaxis()->SetLabelFont(42);
+   Graph_Graph_Graph_Graph41220->GetZaxis()->SetLabelSize(0.035);
+   Graph_Graph_Graph_Graph41220->GetZaxis()->SetTitleSize(0.035);
+   Graph_Graph_Graph_Graph41220->GetZaxis()->SetTitleFont(42);
+   graph->SetHistogram(Graph_Graph_Graph_Graph41220);
+   
+   multigraph->Add(graph,"");
+   
+   Double_t Graph_fx21[5] = {
+   5.11431,
+   4.17122,
+   2.183629,
+   2.163808,
+   1.725617};
+   Double_t Graph_fy21[5] = {
+   1438.88,
+   248.8028,
+   125.4157,
+   108.1745,
+   93.00245};
+   graph = new TGraph(5,Graph_fx21,Graph_fy21);
+   graph->SetName("Graph");
+   graph->SetTitle("Graph");
+   graph->SetFillColor(1);
+   graph->SetMarkerStyle(21);
+   
+   TH1F *Graph_Graph_Graph_Graph51321 = new TH1F("Graph_Graph_Graph_Graph51321","Graph",100,1.386748,5.45318);
+   Graph_Graph_Graph_Graph51321->SetMinimum(0);
+   Graph_Graph_Graph_Graph51321->SetMaximum(1573.468);
+   Graph_Graph_Graph_Graph51321->SetDirectory(0);
+   Graph_Graph_Graph_Graph51321->SetStats(0);
+
+   ci = TColor::GetColor("#000099");
+   Graph_Graph_Graph_Graph51321->SetLineColor(ci);
+   Graph_Graph_Graph_Graph51321->GetXaxis()->SetLabelFont(42);
+   Graph_Graph_Graph_Graph51321->GetXaxis()->SetLabelSize(0.035);
+   Graph_Graph_Graph_Graph51321->GetXaxis()->SetTitleSize(0.035);
+   Graph_Graph_Graph_Graph51321->GetXaxis()->SetTitleFont(42);
+   Graph_Graph_Graph_Graph51321->GetYaxis()->SetLabelFont(42);
+   Graph_Graph_Graph_Graph51321->GetYaxis()->SetLabelSize(0.035);
+   Graph_Graph_Graph_Graph51321->GetYaxis()->SetTitleSize(0.035);
+   Graph_Graph_Graph_Graph51321->GetYaxis()->SetTitleFont(42);
+   Graph_Graph_Graph_Graph51321->GetZaxis()->SetLabelFont(42);
+   Graph_Graph_Graph_Graph51321->GetZaxis()->SetLabelSize(0.035);
+   Graph_Graph_Graph_Graph51321->GetZaxis()->SetTitleSize(0.035);
+   Graph_Graph_Graph_Graph51321->GetZaxis()->SetTitleFont(42);
+   graph->SetHistogram(Graph_Graph_Graph_Graph51321);
+   
+   multigraph->Add(graph,"");
+   
+   Double_t Graph_fx22[5] = {
+   6.168078,
+   5.199228,
+   4.669343,
+   4.171204,
+   3.993705};
+   Double_t Graph_fy22[5] = {
+   372.4462,
+   215.9165,
+   155.5174,
+   141.9081,
+   124.3282};
+   graph = new TGraph(5,Graph_fx22,Graph_fy22);
+   graph->SetName("Graph");
+   graph->SetTitle("Graph");
+   graph->SetFillColor(1);
+
+   ci = TColor::GetColor("#ff0000");
+   graph->SetMarkerColor(ci);
+   graph->SetMarkerStyle(21);
+   
+   TH1F *Graph_Graph_Graph_Graph61422 = new TH1F("Graph_Graph_Graph_Graph61422","Graph",100,3.776268,6.385515);
+   Graph_Graph_Graph_Graph61422->SetMinimum(99.51642);
+   Graph_Graph_Graph_Graph61422->SetMaximum(397.258);
+   Graph_Graph_Graph_Graph61422->SetDirectory(0);
+   Graph_Graph_Graph_Graph61422->SetStats(0);
+
+   ci = TColor::GetColor("#000099");
+   Graph_Graph_Graph_Graph61422->SetLineColor(ci);
+   Graph_Graph_Graph_Graph61422->GetXaxis()->SetLabelFont(42);
+   Graph_Graph_Graph_Graph61422->GetXaxis()->SetLabelSize(0.035);
+   Graph_Graph_Graph_Graph61422->GetXaxis()->SetTitleSize(0.035);
+   Graph_Graph_Graph_Graph61422->GetXaxis()->SetTitleFont(42);
+   Graph_Graph_Graph_Graph61422->GetYaxis()->SetLabelFont(42);
+   Graph_Graph_Graph_Graph61422->GetYaxis()->SetLabelSize(0.035);
+   Graph_Graph_Graph_Graph61422->GetYaxis()->SetTitleSize(0.035);
+   Graph_Graph_Graph_Graph61422->GetYaxis()->SetTitleFont(42);
+   Graph_Graph_Graph_Graph61422->GetZaxis()->SetLabelFont(42);
+   Graph_Graph_Graph_Graph61422->GetZaxis()->SetLabelSize(0.035);
+   Graph_Graph_Graph_Graph61422->GetZaxis()->SetTitleSize(0.035);
+   Graph_Graph_Graph_Graph61422->GetZaxis()->SetTitleFont(42);
+   graph->SetHistogram(Graph_Graph_Graph_Graph61422);
+   
+   multigraph->Add(graph,"");
+   
+   Double_t Graph_fx23[5] = {
+   3.073679,
+   3.458002,
+   3.135732,
+   2.673389,
+   2.524573};
+   Double_t Graph_fy23[5] = {
+   740.7095,
+   296.8146,
+   207.1573,
+   155.3983,
+   136.7898};
+   graph = new TGraph(5,Graph_fx23,Graph_fy23);
+   graph->SetName("Graph");
+   graph->SetTitle("Graph");
+   graph->SetFillColor(1);
+
+   ci = TColor::GetColor("#009900");
+   graph->SetMarkerColor(ci);
+   graph->SetMarkerStyle(21);
+   
+   TH1F *Graph_Graph_Graph_Graph71523 = new TH1F("Graph_Graph_Graph_Graph71523","Graph",100,2.43123,3.551345);
+   Graph_Graph_Graph_Graph71523->SetMinimum(76.39781);
+   Graph_Graph_Graph_Graph71523->SetMaximum(801.1015);
+   Graph_Graph_Graph_Graph71523->SetDirectory(0);
+   Graph_Graph_Graph_Graph71523->SetStats(0);
+
+   ci = TColor::GetColor("#000099");
+   Graph_Graph_Graph_Graph71523->SetLineColor(ci);
+   Graph_Graph_Graph_Graph71523->GetXaxis()->SetLabelFont(42);
+   Graph_Graph_Graph_Graph71523->GetXaxis()->SetLabelSize(0.035);
+   Graph_Graph_Graph_Graph71523->GetXaxis()->SetTitleSize(0.035);
+   Graph_Graph_Graph_Graph71523->GetXaxis()->SetTitleFont(42);
+   Graph_Graph_Graph_Graph71523->GetYaxis()->SetLabelFont(42);
+   Graph_Graph_Graph_Graph71523->GetYaxis()->SetLabelSize(0.035);
+   Graph_Graph_Graph_Graph71523->GetYaxis()->SetTitleSize(0.035);
+   Graph_Graph_Graph_Graph71523->GetYaxis()->SetTitleFont(42);
+   Graph_Graph_Graph_Graph71523->GetZaxis()->SetLabelFont(42);
+   Graph_Graph_Graph_Graph71523->GetZaxis()->SetLabelSize(0.035);
+   Graph_Graph_Graph_Graph71523->GetZaxis()->SetTitleSize(0.035);
+   Graph_Graph_Graph_Graph71523->GetZaxis()->SetTitleFont(42);
+   graph->SetHistogram(Graph_Graph_Graph_Graph71523);
+   
+   multigraph->Add(graph,"");
+   
+   Double_t Graph_fx24[5] = {
+   2.855463,
+   2.199375,
+   2.138933,
+   1.750585,
+   1.832966};
+   Double_t Graph_fy24[5] = {
+   229.3731,
+   133.8951,
+   113.6417,
+   80.12779,
+   96.45752};
+   graph = new TGraph(5,Graph_fx24,Graph_fy24);
+   graph->SetName("Graph");
+   graph->SetTitle("Graph");
+   graph->SetFillColor(1);
+
+   ci = TColor::GetColor("#0000ff");
+   graph->SetMarkerColor(ci);
+   graph->SetMarkerStyle(21);
+   
+   TH1F *Graph_Graph_Graph_Graph81624 = new TH1F("Graph_Graph_Graph_Graph81624","Graph",100,1.640098,2.965951);
+   Graph_Graph_Graph_Graph81624->SetMinimum(65.20326);
+   Graph_Graph_Graph_Graph81624->SetMaximum(244.2976);
+   Graph_Graph_Graph_Graph81624->SetDirectory(0);
+   Graph_Graph_Graph_Graph81624->SetStats(0);
+
+   ci = TColor::GetColor("#000099");
+   Graph_Graph_Graph_Graph81624->SetLineColor(ci);
+   Graph_Graph_Graph_Graph81624->GetXaxis()->SetLabelFont(42);
+   Graph_Graph_Graph_Graph81624->GetXaxis()->SetLabelSize(0.035);
+   Graph_Graph_Graph_Graph81624->GetXaxis()->SetTitleSize(0.035);
+   Graph_Graph_Graph_Graph81624->GetXaxis()->SetTitleFont(42);
+   Graph_Graph_Graph_Graph81624->GetYaxis()->SetLabelFont(42);
+   Graph_Graph_Graph_Graph81624->GetYaxis()->SetLabelSize(0.035);
+   Graph_Graph_Graph_Graph81624->GetYaxis()->SetTitleSize(0.035);
+   Graph_Graph_Graph_Graph81624->GetYaxis()->SetTitleFont(42);
+   Graph_Graph_Graph_Graph81624->GetZaxis()->SetLabelFont(42);
+   Graph_Graph_Graph_Graph81624->GetZaxis()->SetLabelSize(0.035);
+   Graph_Graph_Graph_Graph81624->GetZaxis()->SetTitleSize(0.035);
+   Graph_Graph_Graph_Graph81624->GetZaxis()->SetTitleFont(42);
+   graph->SetHistogram(Graph_Graph_Graph_Graph81624);
    
    multigraph->Add(graph,"");
    multigraph->Draw("ap");
@@ -408,16 +766,6 @@ void ShashlikTimeResolutionVsRiseTime()
    entry->SetLineWidth(1);
 
    ci = TColor::GetColor("#ff0000");
-   entry->SetMarkerColor(ci);
-   entry->SetMarkerStyle(8);
-   entry->SetMarkerSize(1.2);
-   entry->SetTextFont(42);
-   entry=leg->AddEntry("Graph","SiPM 1x1 mm^{2}, 10 #mu m pitch, DSB fiber","p");
-   entry->SetLineColor(1);
-   entry->SetLineStyle(1);
-   entry->SetLineWidth(1);
-
-   ci = TColor::GetColor("#009900");
    entry->SetMarkerColor(ci);
    entry->SetMarkerStyle(8);
    entry->SetMarkerSize(1.2);

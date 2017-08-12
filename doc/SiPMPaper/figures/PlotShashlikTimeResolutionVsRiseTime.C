@@ -7,27 +7,31 @@ void PlotSiPMRiseTres()
  TCanvas *c1 = new TCanvas("c1","c1", 800, 600);
   gStyle->SetOptStat(0);
 
-  int n1 =data->Draw("tree_DSB1_ch1_rise:1000*tree_DSB1_time_1","");
+
+  //we will scale the risetime by a factor of 0.8 because Mohammed computed
+  // rise time from 0 to 100% of the amplitude, while we conventionally use 
+  // 10-90% of the amplitude
+  int n1 =data->Draw("tree_DSB1_ch1_rise*0.8:1000*tree_DSB1_time_1","");
  TGraph *DSB1ch1 = new TGraph(n1,data->GetV1(),data->GetV2());
  DSB1ch1->SetMarkerColor(kBlack);
 DSB1ch1->SetMarkerStyle(8);
 DSB1ch1->SetMarkerSize(1.2);
 
  
-  int n2 =data->Draw("tree_DSB1_ch2_rise:1000*tree_DSB1_time_2","");
+  int n2 =data->Draw("tree_DSB1_ch2_rise*0.8:1000*tree_DSB1_time_2","");
  TGraph *DSB1ch2 = new TGraph(n2,data->GetV1(),data->GetV2());
 DSB1ch2->SetMarkerColor(kRed);
 DSB1ch2->SetMarkerStyle(8);
 DSB1ch2->SetMarkerSize(1.2);
 
 
-  int n3 =data->Draw("tree_DSB1_ch3_rise:1000*tree_DSB1_time_3","");
+  int n3 =data->Draw("tree_DSB1_ch3_rise*0.8:1000*tree_DSB1_time_3","");
  TGraph *DSB1ch3 = new TGraph(n3,data->GetV1(),data->GetV2());
 DSB1ch3->SetMarkerColor(kGreen+2);
 DSB1ch3->SetMarkerStyle(8);
 DSB1ch3->SetMarkerSize(1.2);
  
-  int n4 =data->Draw("tree_DSB1_ch4_rise:1000*tree_DSB1_time_4","");
+  int n4 =data->Draw("tree_DSB1_ch4_rise*0.8:1000*tree_DSB1_time_4","");
  TGraph *DSB1ch4 = new TGraph(n4,data->GetV1(),data->GetV2());
 DSB1ch4->SetMarkerColor(kBlue);
 DSB1ch4->SetMarkerStyle(8);
@@ -35,7 +39,7 @@ DSB1ch4->SetMarkerSize(1.2);
  
 
 
-  int n5 =data->Draw("tree_Cap_ch1_rise:1000*tree_Cap_time_1","");
+  int n5 =data->Draw("tree_Cap_ch1_rise*0.8:1000*tree_Cap_time_1","");
  TGraph *Capch1 = new TGraph(n5,data->GetV1(),data->GetV2()); 
 Capch1->SetMarkerColor(kBlack);
 Capch1->SetMarkerStyle(21);
@@ -43,7 +47,7 @@ Capch1->SetMarkerSize(1.0);
 
 
 
-  int n6 =data->Draw("tree_Cap_ch2_rise:1000*tree_Cap_time_2","");
+  int n6 =data->Draw("tree_Cap_ch2_rise*0.8:1000*tree_Cap_time_2","");
  TGraph *Capch2 = new TGraph(n6,data->GetV1(),data->GetV2()); 
 Capch2->SetMarkerColor(kRed);
 Capch2->SetMarkerStyle(21);
@@ -52,7 +56,7 @@ Capch2->SetMarkerSize(1.0);
 
  
 
-  int n7 =data->Draw("tree_Cap_ch3_rise:1000*tree_Cap_time_3","");
+  int n7 =data->Draw("tree_Cap_ch3_rise*0.8:1000*tree_Cap_time_3","");
  TGraph *Capch3 = new TGraph(n7,data->GetV1(),data->GetV2()); 
 Capch3->SetMarkerColor(kGreen+2);
 Capch3->SetMarkerStyle(21);
@@ -60,7 +64,7 @@ Capch3->SetMarkerSize(1.0);
 
  
 
-  int n8 =data->Draw("tree_Cap_ch4_rise:1000*tree_Cap_time_4","");
+  int n8 =data->Draw("tree_Cap_ch4_rise*0.8:1000*tree_Cap_time_4","");
  TGraph *Capch4 = new TGraph(n8,data->GetV1(),data->GetV2()); 
 Capch4->SetMarkerColor(kBlue);
 Capch4->SetMarkerStyle(21);
