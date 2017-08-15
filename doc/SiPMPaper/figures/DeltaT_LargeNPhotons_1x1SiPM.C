@@ -115,7 +115,7 @@
    htemp__1__2->GetZaxis()->SetTitleSize(0.035);
    htemp__1__2->GetZaxis()->SetTitleFont(42);
    htemp__1__2->Draw("");
-   TLatex *   tex = new TLatex(-1.22819,1896.5,"#sigma_{eff} = 12.0 ps");
+   TLatex *   tex = new TLatex(-1.22819,1896.5,"#sigma_{eff} = 12 ps");
    tex->SetLineWidth(2);
    tex->Draw();
    tex = new TLatex(-1.26549,2401.62,"1x1 mm^{2} SiPM");
@@ -125,4 +125,5 @@
    c1->cd();
    c1->SetSelected(c1);
    c1->ToggleToolBar();
+   c1->SaveAs("DeltaT_LargeNPhotons_1x1SiPM.pdf");
 }
