@@ -163,7 +163,7 @@
    f1Res2->SetParLimits(2,0,0);
    gre->GetListOfFunctions()->Add(f1Res2);
    gre->Draw("p");
-   TLatex *   tex = new TLatex(0.9,0.85,"3x3mm SiPM: #sigma_{t} = #frac{1800 #pm 50 [ps]}{N} + #frac{136 #pm 6 [ps]}{#sqrt{N}} + 3.9 #pm 0.1 [ps]");
+   TLatex *   tex = new TLatex(0.9,0.85,"3x3mm^{2} SiPM: #sigma_{t} = #frac{1800 #pm 50 [ps]}{N} + #frac{136 #pm 6 [ps]}{#sqrt{N}} + 3.9 #pm 0.1 [ps]");
 tex->SetNDC();
    tex->SetTextAlign(31);
    tex->SetTextFont(42);
@@ -181,4 +181,5 @@ tex->SetNDC();
    c->Modified();
    c->cd();
    c->SetSelected(c);
+   c->SaveAs("TimeResolutionVsNPhotons.pdf");
 }
