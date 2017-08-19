@@ -8,12 +8,12 @@ TFile *_file0 = TFile::Open("SiPMdata.root");
 
 
 
- data->Draw("1000*tree_DSB1_time_1_2_3_4:tree_Energy>>DSB1(250,0,250,600,0,200)","");
+ data->Draw("1000*tree_DSB1_time_1_2_3_4:tree_Energy>>DSB1(250,0,250,600,0,200)","tree_Energy > 40");
 //  /*TF1 *f00 = new TF1("f00","[2]/(x**0.5)+[1]/x+[0]");
 // DSB1ch1->Fit(f00,"","",15,270.0);
 // DSB1ch1->GetFunction("f00")->SetLineColor(kBlack); */
 
- data->Draw("1000*tree_Cap_time_1_2_3_4:tree_Energy>>Cap(250,0,250,600,0,200)","");
+ data->Draw("1000*tree_Cap_time_1_2_3_4:tree_Energy>>Cap(250,0,250,600,0,200)","tree_Energy > 40");
 // /*TF1 *f0 = new TF1("f0","[2]/(x**0.5)+[1]/x+[0]");
 // Capch1->Fit(f0,"","",15,270.0);
 // Capch1->GetFunction("f0")->SetLineColor(kBlack); */

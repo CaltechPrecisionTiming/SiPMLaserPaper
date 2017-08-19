@@ -8,7 +8,7 @@ TFile *_file0 = TFile::Open("SiPMdata.root");
 
 
 
- data->Draw("1000*tree_DSB1_time_1:tree_Energy>>DSB1ch1(250,0,250,600,0,400)","");
+ data->Draw("1000*tree_DSB1_time_1:tree_Energy>>DSB1ch1(250,0,250,600,0,400)","tree_Energy>40");
 //  TF1 *f00 = new TF1("f00","[2]/(x**0.5)+[1]/x+[0]");
 // DSB1ch1->Fit(f00,"","",15,270.0);
 // DSB1ch1->GetFunction("f00")->SetLineColor(kBlack); 
@@ -17,7 +17,7 @@ DSB1ch1->SetMarkerStyle(8);
 DSB1ch1->SetMarkerSize(1); 
 
 
- data->Draw("1000*tree_Cap_time_1:tree_Energy>>Capch1(250,0,250,600,0,400)","");
+ data->Draw("1000*tree_Cap_time_1:tree_Energy>>Capch1(250,0,250,600,0,400)","tree_Energy>40");
 // TF1 *f0 = new TF1("f0","[2]/(x**0.5)+[1]/x+[0]");
 // Capch1->Fit(f0,"","",15,270.0);
 // Capch1->GetFunction("f0")->SetLineColor(kBlack); 
@@ -25,7 +25,7 @@ Capch1->SetMarkerColor(kBlack);
 Capch1->SetMarkerStyle(21);
 Capch1->SetMarkerSize(0.8);
 
- data->Draw("1000*tree_DSB1_time_2:tree_Energy>>DSB1ch2(250,0,250,600,0,400)","");
+ data->Draw("1000*tree_DSB1_time_2:tree_Energy>>DSB1ch2(250,0,250,600,0,400)","tree_Energy>40");
 // /*TF1 *f1 = new TF1("f1","[2]/(x**0.5)+[1]/x+[0]");
 // DSB1ch2->Fit(f1,"","",15,270);
 // DSB1ch2->GetFunction("f1")->SetLineColor(kRed);*/
@@ -34,7 +34,7 @@ DSB1ch2->SetMarkerStyle(8);
 DSB1ch2->SetMarkerSize(1);
 
 
-data->Draw("1000*tree_Cap_time_2:tree_Energy>>Capch2(250,0,250,600,0,400)","");
+data->Draw("1000*tree_Cap_time_2:tree_Energy>>Capch2(250,0,250,600,0,400)","tree_Energy>40");
 // /*TF1 *f2 = new TF1("f2","[2]/(x**0.5)+[1]/x+[0]");
 // Capch2->Fit(f2,"","",15,270); 
 // Capch2->GetFunction("f2")->SetLineColor(kRed);*/
@@ -50,7 +50,7 @@ Capch2->SetMarkerSize(0.8);
 
 
 
- data->Draw("1000*tree_DSB1_time_3:tree_Energy>>DSB1ch3(250,0,250,1200,0,800)","");
+ data->Draw("1000*tree_DSB1_time_3:tree_Energy>>DSB1ch3(250,0,250,1200,0,800)","tree_Energy>40");
 // /*TF1 *f3 = new TF1("f3","[2]/(x**0.5)+[1]/x+[0]");
 // DSB1ch3->Fit(f3,"","",15,270);
 // DSB1ch3->GetFunction("f3")->SetLineColor(kGreen);*/
@@ -59,7 +59,7 @@ DSB1ch3->SetMarkerStyle(8);
 DSB1ch3->SetMarkerSize(1);
 
 
- data->Draw("1000*tree_Cap_time_3:tree_Energy>>Capch3(250,0,250,1200,0,800)","");
+ data->Draw("1000*tree_Cap_time_3:tree_Energy>>Capch3(250,0,250,1200,0,800)","tree_Energy>40");
 // /*TF1 *f4 = new TF1("f4","[2]/(x**0.5)+[1]/x+[0]");
 // Capch3->Fit(f4,"","",15,270); 
 // Capch3->GetFunction("f4")->SetLineColor(kGreen);*/
@@ -72,7 +72,7 @@ Capch3->SetMarkerSize(0.8);
 
 
 
- data->Draw("1000*tree_DSB1_time_4:tree_Energy>>DSB1ch4(250,0,250,600,0,400)","");
+ data->Draw("1000*tree_DSB1_time_4:tree_Energy>>DSB1ch4(250,0,250,600,0,400)","tree_Energy>40");
 // /*TF1 *f5 = new TF1("f5","[2]/(x**0.5)+[1]/x+[0]");
 // DSB1ch4->Fit(f5,"","",15,270); 
 // DSB1ch4->GetFunction("f5")->SetLineColor(kBlue);*/
@@ -84,7 +84,7 @@ DSB1ch4->SetMarkerSize(1);
 
 
 
- data->Draw("1000*tree_Cap_time_4:tree_Energy>>Capch4(250,0,250,600,0,400)","");
+ data->Draw("1000*tree_Cap_time_4:tree_Energy>>Capch4(250,0,250,600,0,400)","tree_Energy>40");
 // /*TF1 *f6 = new TF1("f6","[2]/(x**0.5)+[1]/x+[0]");
 // Capch4->Fit(f6,"","",15,270);  
 // Capch4->GetFunction("f6")->SetLineColor(kBlue);*/
@@ -96,7 +96,7 @@ Capch4->SetMarkerSize(0.8);
 
 
 
-data->Draw("1000*tree_Y11_time_1:tree_Energy>>Y11ch1(250,0,250,600,0,400)","");
+data->Draw("1000*tree_Y11_time_1:tree_Energy>>Y11ch1(250,0,250,600,0,400)","tree_Energy>40");
 // /*TF1 *f7 = new TF1("f7","[2]/(x**0.5)+[1]/x+[0]");
 // Y11ch1->Fit(f7,"","",15,270);
 // Y11ch1->GetFunction("f7")->SetLineColor(kBlack);
@@ -110,7 +110,7 @@ Y11ch1->SetMarkerSize(1.2);
 
 
 
-data->Draw("1000*tree_Y11_time_2:tree_Energy>>Y11ch2(250,0,250,600,0,400)","");
+data->Draw("1000*tree_Y11_time_2:tree_Energy>>Y11ch2(250,0,250,600,0,400)","tree_Energy>40");
 // /*TF1 *f8 = new TF1("f8","[2]/(x**0.5)+[1]/x+[0]");
 // Y11ch2->Fit(f8,"","",15,270);
 // Y11ch2->GetFunction("f8")->SetLineColor(kRed);
@@ -126,7 +126,7 @@ Y11ch2->SetMarkerSize(1.2);
 
 
 
-data->Draw("1000*tree_Y11_time_3:tree_Energy>>Y11ch3(250,0,250,600,0,400)","");
+data->Draw("1000*tree_Y11_time_3:tree_Energy>>Y11ch3(250,0,250,600,0,400)","tree_Energy>40");
 // /*TF1 *f9 = new TF1("f9","[2]/(x**0.5)+[1]/x+[0]");
 // Y11ch3->Fit(f9,"","",15,270);
 // Y11ch3->GetFunction("f9")->SetLineColor(kGreen);
@@ -142,7 +142,7 @@ Y11ch3->SetMarkerSize(1.2);
 
 
 
-data->Draw("1000*tree_Y11_time_4:tree_Energy>>Y11ch4(250,0,250,600,0,400)","");
+data->Draw("1000*tree_Y11_time_4:tree_Energy>>Y11ch4(250,0,250,600,0,400)","tree_Energy>40");
 // /*TF1 *f10 = new TF1("f10","[2]/(x**0.5)+[1]/x+[0]");
 // Y11ch4->Fit(f10,"","",15,270);
 // Y11ch4->GetFunction("f10")->SetLineColor(kBlue);

@@ -1,8 +1,8 @@
 void ShashlikTimeResolutionCombinedChannelVsEnergy()
 {
 //=========Macro generated from canvas: c1/c1
-//=========  (Fri Aug 11 00:48:12 2017) by ROOT version6.08/05
-   TCanvas *c1 = new TCanvas("c1", "c1",519,95,800,600);
+//=========  (Sat Aug 19 19:56:13 2017) by ROOT version6.08/05
+   TCanvas *c1 = new TCanvas("c1", "c1",2,51,800,600);
    gStyle->SetOptStat(0);
    c1->Range(-38.46154,-30.82051,282.0513,226.0171);
    c1->SetFillColor(0);
@@ -18,8 +18,7 @@ void ShashlikTimeResolutionCombinedChannelVsEnergy()
    DSB1__1->SetBinContent(37195,1);
    DSB1__1->SetBinContent(40421,1);
    DSB1__1->SetBinContent(58263,1);
-   DSB1__1->SetBinContent(84441,1);
-   DSB1__1->SetEntries(5);
+   DSB1__1->SetEntries(4);
    DSB1__1->SetStats(0);
 
    Int_t ci;      // for color index setting
@@ -48,13 +47,12 @@ void ShashlikTimeResolutionCombinedChannelVsEnergy()
    DSB1__1->GetZaxis()->SetTitleFont(42);
    DSB1__1->Draw("");
    
-   TH2F *Cap__2 = new TH2F("Cap__2","1000*tree_Cap_time_1_2_3_4:tree_Energy",250,0,250,600,0,200);
+   TH2F *Cap__2 = new TH2F("Cap__2","1000*tree_Cap_time_1_2_3_4:tree_Energy {tree_Energy > 40}",250,0,250,600,0,200);
    Cap__2->SetBinContent(55591,1);
    Cap__2->SetBinContent(55641,1);
    Cap__2->SetBinContent(65621,1);
    Cap__2->SetBinContent(96819,1);
-   Cap__2->SetBinContent(151473,1);
-   Cap__2->SetEntries(5);
+   Cap__2->SetEntries(4);
    Cap__2->SetStats(0);
 
    ci = TColor::GetColor("#000099");
