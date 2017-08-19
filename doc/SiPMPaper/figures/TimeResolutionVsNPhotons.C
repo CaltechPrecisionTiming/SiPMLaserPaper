@@ -68,7 +68,7 @@
    TF1 *f1Res = new TF1("f1Res","[0]/x+[1]/sqrt(x)+[2]",26.19837,3124.928);
    f1Res->SetFillColor(19);
    f1Res->SetFillStyle(0);
-   f1Res->SetLineColor(2);
+   f1Res->SetLineColor(kBlack);
    f1Res->SetLineWidth(2);
    f1Res->SetChisquare(67.67426);
    f1Res->SetNDF(6);
