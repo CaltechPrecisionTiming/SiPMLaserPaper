@@ -100,7 +100,7 @@
    ci = TColor::GetColor("#000099");
    htemp__1__2->SetLineColor(ci);
    htemp__1__2->SetLineWidth(2);
-   htemp__1__2->GetXaxis()->SetTitle("Time [ns]");
+   htemp__1__2->GetXaxis()->SetTitle("#Delta t [ns]");
    htemp__1__2->GetXaxis()->SetRange(1,100);
    htemp__1__2->GetXaxis()->SetLabelFont(42);
    htemp__1__2->GetXaxis()->SetTitleSize(0.05);

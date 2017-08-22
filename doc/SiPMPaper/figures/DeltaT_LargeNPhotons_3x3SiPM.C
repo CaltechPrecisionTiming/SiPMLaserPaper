@@ -62,7 +62,7 @@
    ci = TColor::GetColor("#000099");
    htemp__1__1->SetLineColor(ci);
    htemp__1__1->SetLineWidth(2);
-   htemp__1__1->GetXaxis()->SetTitle("Time [ns]");
+   htemp__1__1->GetXaxis()->SetTitle("#Delta t [ns]");
    htemp__1__1->GetXaxis()->SetRange(1,100);
    htemp__1__1->GetXaxis()->SetLabelFont(42);
    htemp__1__1->GetXaxis()->SetTitleSize(0.05);
@@ -90,4 +90,5 @@
    c1->cd();
    c1->SetSelected(c1);
    c1->ToggleToolBar();
+   c1->SaveAs("DeltaT_LargeNPhotons_3x3SiPM.pdf");
 }
