@@ -13,10 +13,10 @@ based on the DRS4 chip~\cite{DRS4}, whose electronic time resolution has been
 measured to be $4$~ps. Data readout for the laser-based measurements are
 triggered by an external digital trigger signal, while at the H4 beamline
 readout is triggered by a signal in a photomultiplier tube coupled to a
-$3$~$\mathrm{cm}$~$\times$~$3$~$\mathrm{cm}$ plastic scintillator. A
-micro-channel plate photo-multiplier (MCP-PMT) detector is used to provide a
-very precise reference time-stamp in order to measure the time resolution of the
-SiPM signals.
+$3$~$\mathrm{cm}$~$\times$~$3$~$\mathrm{cm}$ plastic scintillator located about
+one meter upstream from our detectors. A micro-channel plate photo-multiplier
+(MCP-PMT) detector is used to provide a very precise reference time-stamp in
+order to measure the time resolution of the SiPM signals.
 
 \subsection{Setup for Laser-based SiPM Timing Measurements}
 
@@ -24,14 +24,14 @@ SiPMs are mounted on a printed circuit board (PCB) with a clipping capacitance
 circuit shown in Figure~\ref{fig:Circuit}. They are mechanically attached to an
 optical breadboard enclosed within a box lined with copper foil for RF
 shielding. The laser is injected via a light-guide fiber mounted on an optical
-holder. The laser beam is immediately split by a refractive mirror and half of
-the light is directed onto the MCP-PMT while the other half of the
-light is directed onto the SiPM under test. A photograph of the setup is shown
-in Figure~\ref{fig:laserSetup}. The Photek-240 MCP-PMT is used as the reference
+holder. The laser beam is immediately split by a 50/50 beam splitter and half of
+the light is directed onto the MCP-PMT while the other half of the light is
+directed onto the SiPM under test. A photograph of the setup is shown in
+Figure~\ref{fig:laserSetup}. The Photek-240 MCP-PMT is used as the reference
 time detector whose time resolution has been measured to be below $7$~ps for
 beam particles~\cite{MCPShowerMaxPaper}. To cover a large range of laser beam
-intensity, neutral density (ND) filters with ND number between 0.2 and 2.4
-are placed between the mirror and the SiPMs under test.
+intensity, neutral density (ND) filters with ND number between 0.2 and 2.4 are
+placed between the beam splitter and the SiPM under test.
 
 \begin{figure}[htbp]
 \centering
@@ -60,7 +60,7 @@ with the LYSO layers having a thickness of $1.5$~mm. The same cell has been used
 to measure the timing performance in comparison to the timing performance of a
 single monolithic crystal of LYSO~\cite{Anderson:2015gha}. A scintillator
 counter of size $1\times 1$~$\mathrm{cm}^{2}$, mounted close to the calorimeter
-cell, is used to select events impinging on the calorimeter cell. The
+cell, is used to select events impinging on the calorimeter cell and to filter out. The
 scintillation light from the LYSO plates is extracted with four
 wavelength-shifting (WLS) fibers. The fibers are coupled to four different types
 of Hamamatsu SiPMs with 10, 15 and 25~$\mu$m pixel size and $1\times
@@ -71,7 +71,7 @@ clipping circuit as shown in Fig~\ref{fig:Circuit} is used for all four SiPMs.
 We do not amplify the output signal of the SiPMs, only exploiting the very large
 light yield of the LYSO scintillator and the intrinsic amplification of the
 SiPMs. A labeled photograph of the setup in the H4 beamline is shown in
-Figure~\ref{fig:TestbeamSetup} below. More details of the calorimetric
+Figure~\ref{fig:TestbeamSetup}. More details of the calorimetric
 performance of the Shashlik configuration are discussed in
 references~\cite{shashlik1}~and~\cite{shashlik2}.
 
@@ -108,20 +108,20 @@ electrons in a range between $20$~GeV~and~$200$~GeV in the CERN North Area
 test-beam. The impact point of the electrons onto the calorimeter cell is
 measured with a fiber hodoscope with a precision of better than $1$~mm. As
 timing measurements are affected by shower containment, we restrict the time
-measurements to events where shower containment is large by extracting time
-measurements only from events where the beam particle impacts in the center of
+measurements to events where shower containment is large. This is achieved by
+using events where the beam particle impacts in the center of
 the calorimeter cell within a restricted area between
 $2\times2$~$\mathrm{mm}^{2}$ and $6\times8$~$\mathrm{mm}^{2}$ depending on the
 exact setup. 
 
-\subsection{Timestamp Reconstruction}
-\label{sec:reco}
-The time-stamp for all signals is reconstructed by fitting the pulse waveform
-with an appropriate functional form. For signal pulses from the MCP-PMTs, which
-exhibit a very fast rise and decay, we fit a Gaussian function to a $1.4$~ns
-window around the peak of the pulse and extract the time-stamp as the mean
-parameter of the Gaussian function. For signal pulses from the SiPM sensors, we
-fit a linear function to time sample points between $10\%$ and $60\%$ of the
-pulse maximum and the time-stamp is assigned as the time at which the fitted
-linear function rises to $20\%$ of the pulse maximum. More details of the
-time-stamp reconstruction can be found in reference~\cite{Anderson:2015gha}.
+\subsection{Timestamp Reconstruction} \label{sec:reco} The time-stamp for all
+signals is reconstructed by fitting the pulse waveform with an appropriate
+functional form. Signal pulses from the MCP-PMTs as well as direct laser light
+signals on the SiPMs exhibit a very fast rise and decay. Therefore, we fit a
+Gaussian function to a $1.4$~ns window around the peak of the pulse and extract
+the time-stamp as the mean parameter of the Gaussian function. Scintillation
+signal pulses read out by the SiPM sensors have a much longer decay time. For
+these signals, we fit a linear function to time sample points between $10\%$ and
+$60\%$ of the pulse maximum and the time-stamp is assigned as the time at which
+the fitted linear function rises to $20\%$ of the pulse maximum. More details of
+the time-stamp reconstruction can be found in reference~\cite{Anderson:2015gha}.
