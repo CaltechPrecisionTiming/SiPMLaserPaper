@@ -5,15 +5,15 @@ Four different SiPMs are used to read out the four light fibers. As the SiPMs
 and fibers each have different gain and light collection efficiency, the signal
 amplitude varies for the four different channels. In Figure~\ref{TimeResolution}
 we show the time resolution of the four individual fibers as a function of their
-respective signal amplitudes for both the DSB-doped fibers and the quartz
-capillaries. We observe that the time resolution improves as the amplitude of
-the pulses increases. The best time resolution per fiber is around $60$~ps for
-all of the channels, but the amplitude at which this performance is achieved
-varies. Another important observation is that the time resolution measured from
-the DSB-doped WLS fibers fall on the same curve as the time resolution measured
-from the quartz capillaries. We conclude that the method of light extraction
-impacts the time resolution only through its effect on the signal amplitude, and
-no additional time jitter is introduced. 
+respective signal amplitudes for both the DSB-doped fibers and the DSB-filled
+quartz capillaries. We observe that the time resolution improves as the
+amplitude of the pulses increases. The best time resolution per fiber is around
+$60$~ps for all of the channels, but the amplitude at which this performance is
+achieved varies. Another important observation is that the time resolution
+measured from the WLS fibers fall on the same curve as the time
+resolution measured from the quartz capillaries. We conclude that the method of
+light extraction impacts the time resolution only through its effect on the
+signal amplitude, and no additional time jitter is introduced. 
 
 
 \begin{figure}[!htb]
@@ -21,8 +21,8 @@ no additional time jitter is introduced.
 \includegraphics[width=0.99\textwidth]{figures/ShashlikTimeResolution.pdf}
 \caption{\label{TimeResolution} The measured time resolution is shown as a
 function of the signal amplitude for each individual read-out fiber and SiPM.
-The data for each SiPM consists of two sets, one with the DSB WLS plastic fiber
-shown as dots and one with the capillaries with a liquid DSB based WLS shown as
+The data for each SiPM consists of two sets, one with the DSB-doped WLS plastic fiber
+shown as dots and one with the capillaries filled with a liquid DSB-based WLS shown as
 squares. }
 \end{figure}
 
@@ -52,12 +52,17 @@ quartz capillaries are distinguished as dots and squares, respectively. }
 \end{figure}
 
 We show the time resolution measured as a function of the beam energy for
-signals read out by DSB-doped WLS fibers and quartz capillaries in 
-Figure~\ref{TimeResolutionVsEnergy}. Finally, by combining the measured timestamp
-from all four SiPM channels, we can significantly improve the time resolution.
-The combined time resolution measurements for the DSB WLS fibers and the quartz capillaries 
-are shown in Fig~\ref{TimeResolutionCombined} and demonstrate that we can achieve time resolution
-of $42$~ps for high energy electromagnetic showers.
+signals read out by DSB-doped WLS fibers and quartz capillaries in
+Figure~\ref{TimeResolutionVsEnergy}. Finally, by combining the measured
+timestamp from all four SiPM channels, we can significantly improve the time
+resolution. The combined time resolution measurements for the DSB WLS fibers and
+the quartz capillaries are shown in Fig~\ref{TimeResolutionCombined} and
+demonstrate that we can achieve time resolution of $42$~ps for high energy
+electromagnetic showers. The timing performance we achieve with the SiPM readout
+is slightly better than the performance achieved with an MCP-PMT as in our
+previous publication~\cite{Anderson:2015gha}.
+
+We should add that for the double sided MCP readout in our previous paper we achieved 90, 70, 60 ps at 50, 100 150 GeV  respectively. 
 
 
 \begin{figure}[!htb]
@@ -66,8 +71,8 @@ of $42$~ps for high energy electromagnetic showers.
 \includegraphics[width=0.49\textwidth]{figures/ShashlikTimeResolutionVsEnergy_Capillaries.pdf}
 \caption{\label{TimeResolutionVsEnergy} Time resolution measured in the sampling calorimeter 
 cell using the signal of each of the SiPMs individually as a function of the beam energy. 
-The data taken using DSB WLS fibers are shown on
-the left and the data taken using quartz capillaries are shown on the right}
+The data taken using DSB-doped WLS fibers are shown on
+the left and the data taken using DSB-filled quartz capillaries are shown on the right}
 \end{figure}
 
 
@@ -76,8 +81,8 @@ the left and the data taken using quartz capillaries are shown on the right}
 \centering
 \includegraphics[width=0.8\textwidth]{figures/ShashlikTimeResolutionCombinedChannelVsEnergy.pdf}
 \caption{\label{TimeResolutionCombined}  Time resolution measured in the sampling calorimeter cell combining signals from all four  
-SiPMs is shown as a function of the beam energy.  The data recorded with the DSB WLS fibers and the
-quartz capillaries are distinguished as dots and squares.}
+SiPMs is shown as a function of the beam energy.  The data recorded with the DSB-doped WLS fibers and the
+DSB-filled quartz capillaries are distinguished as dots and squares.}
 \end{figure}
 
 
