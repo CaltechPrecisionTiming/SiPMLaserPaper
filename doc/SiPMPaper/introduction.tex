@@ -1,44 +1,56 @@
 \section{Introduction}
 \label{sec:introduction}
 
-Scintillating materials are widely used in detectors of ionizing radiation. They
-are very common as primary sensors in calorimetric applications, either serving
-simultaneously as an absorber material, such as solid crystals, or in
-combination with passive absorbers in a layered arrangement, referred to as
-sampling calorimeters. Scintillators are also used to detect charged particles
-where they achieve a very high efficiency with a layer of thickness of about a
-few millimeters. LYSO has been proposed as a scintillating crystal for future
-calorimeters due to its large scintillation light yield~\cite{LYSOProperties,
-Yang:2015nsa}. To convert the primary scintillation light signal into an
-electrical signal a photodetector is coupled to the scintillator volume, either
-directly or via a light guiding structure. Silicon Photo Multipliers (SiPM) are
-a common choice as a photodetector in contemporary applications. In this paper
-we present studies on SiPMs and a LYSO-based sampling calorimeter with
-SiPM readout with a focus on precise timing measurements. 
+%Scintillating materials are widely used in detectors of ionizing radiation. They
+%are very common as primary sensors in calorimetric applications, either serving
+%simultaneously as an absorber material, such as solid crystals, or in
+%combination with passive absorbers in a layered arrangement, referred to as
+%sampling calorimeters. Scintillators are also used to detect charged particles
+%where they achieve a very high efficiency with a layer of thickness of about a
+%few millimeters. LYSO has been proposed as a scintillating crystal for future
+%calorimeters due to its large scintillation light yield~\cite{LYSOProperties,
+%Yang:2015nsa}. To convert the primary scintillation light signal into an
+%electrical signal a photodetector is coupled to the scintillator volume, either
+%directly or via a light guiding structure. Silicon Photo Multipliers (SiPM) are
+%a common choice as a photodetector in contemporary applications. In this paper
+%we present studies on SiPMs and a LYSO-based sampling calorimeter with
+%SiPM readout with a focus on precise timing measurements. 
 
-Precise time of arrival measurements have recently drawn much attention in the 
-context of detector R\&D for the high luminosity upgrade of the Large Hadron 
-Collider (HL-LHC) as well as for future high energy hadron colliders.  
-These hadron colliders must provide large 
-instantaneous luminosity well above $10^{35}$~$\mathrm{cm}^{-2}\mathrm{s}^{-1}$.
-With current accelerator and particle detector capabilities, such a high 
-instantaneous luminosity will result in very large amounts
-of simultaneous particle collisions (pileup) exceeding several hundreds per
-bunch crossing. Therefore, the crucial ability to identify the origin 
-of the particles produced at the different interaction points will be severely 
-degraded. Precision timing detectors can be used to recover the ability to 
-discriminate between particles produced by different inelastic collisions \cite{adielba}.
-For particle beams with bunch profiles similar to that of the LHC, a detector 
-that can measure the time of arrival of all final state particles 
-with a precision of $20-30$~ps can effectively reduce the impact of
-pileup by a factor of $5$ to $10$. 
+Precise time of arrival measurements have recently drawn much attention in the
+context of detector R\&D for the high luminosity upgrade of the Large Hadron
+Collider (HL-LHC) as well as for future high energy hadron colliders. These
+hadron colliders must provide large instantaneous luminosity well above
+$10^{35}$~$\mathrm{cm}^{-2}\mathrm{s}^{-1}$. With current accelerator and
+particle detector capabilities, such a high instantaneous luminosity will result
+in very large amounts of simultaneous particle collisions (pileup) exceeding
+several hundreds per bunch crossing. Therefore, the crucial ability to identify
+the origin of the particles produced at the different interaction points will be
+severely degraded. Precision timing detectors can be used to recover the ability
+to discriminate between particles produced by different inelastic collisions
+\cite{adielba}. For colliding particle beams with time spread of the order of
+$150-200$~ps, as projected for the LHC, a detector that can measure the time of
+arrival of all final state particles with a precision of $20-30$~ps can reduce
+the effective amount of pileup by a factor of $5$ to $10$. A timing
+resolution in the range of $30-50$~ps is also very interesting for
+optical time projection chambers which are discussed for large volume detectors
+in neutrino experiments and neutrino-less double-beta
+decay~\cite{Aberle:2013jba, otpc}. 
 
-With a timing resolution below $10$~ps for individual charged particles, the
-equivalent spatial resolution is sufficiently good to improve the performance of
-track reconstruction \cite{Neri:2016bng} for hadron collider experiments. A timing
-resolution in the picosecond range for photons is also very interesting for optical time
-projection chambers which are discussed for large volume detectors in neutrino
-experiments and neutrino-less double-beta decay~\cite{Aberle:2013jba, otpc}. 
+In our previous work in Ref.~\cite{Anderson:2015gha}, we demonstrated the
+feasibility of achieving $30$~ps resolution for electromagnetic showers using a
+sampling calorimeter based on LYSO crystal scintillators. Using micro-channel
+plate photomultipliers (MCP-PMTs) to read out photons on the edge of each LYSO
+layer, we achieved a time resolution of $55$~ps for electrons with $32$~GeV of
+energy. Using wavelength-shifting fibers to extract the light into the MCP-PMTs,
+we achieved a time resolution close to $100$~ps. We concluded that the goal of
+$30$~ps time resolution was within reach provided that we can realize similar
+performance using more economical photodetectors, extract the light using means
+that are radiation-hard, and achieve improved light collection efficiency. In
+this paper, we report on updated studies that demonstrate the time resolution
+performance using silicon photomultiplier (SiPM) detectors that are more
+economically scalable to the size of modern collider experiments, and 
+radiation-hard wavelength-shifting quartz capillaries 
+that can maintain its transparency under the harsh radiation conditions of the HL-LHC. 
 
 The paper is organized as follows. In Sec.~\ref{sec:sipm} we give a brief
 overview of the SiPM sensors in the context of our research. In
