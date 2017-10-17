@@ -20,8 +20,12 @@ order to measure the time resolution of the SiPM signals.
 
 \subsection{Setup for Laser-based SiPM Timing Measurements}
 
-SiPMs are mounted on a printed circuit board (PCB) with a clipping capacitance
-circuit shown in Figure~\ref{fig:Circuit}. They are mechanically attached to an
+SiPMs are mounted on a printed circuit board (PCB) with the
+circuit shown in Figure~\ref{fig:Circuit}. The high-pass filter is used to 
+decrease the rise-time of signal pulses by restricting to high frequency
+signals only, sometimes referred to as ``clipping''. As a consequence, 
+the resulting signal pulse will be smaller in amplitude.
+The SiPMs are mechanically attached to an
 optical breadboard enclosed within a box lined with copper foil for RF
 shielding. The laser is injected via a light-guide fiber mounted on an optical
 holder. The laser beam is immediately split by a 50/50 beam splitter and half of
