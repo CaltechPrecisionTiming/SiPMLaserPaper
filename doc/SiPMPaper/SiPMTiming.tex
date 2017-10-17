@@ -132,8 +132,8 @@ LYSO \sep Silicon Photomultiplier \sep Precision Timing \sep picosecond \sep sci
 
 \section{Timing Measurements} 
 
-A previous study on precision timing with LYSO-based calorimeters
-\cite{Anderson:2015gha} using MCP-PMT as the primary photodetectors achieved
+A previous study on precision timing with LYSO-based calorimeters~\cite{Anderson:2015gha} 
+using MCP-PMT as the primary photodetectors achieved
 time resolutions at the level of about $100$~ps. In this paper, we present new
 studies of the timing performance of LYSO-based calorimeters using SiPMs. While
 SiPMs feature a rise time around $1$~ns, slower than the rise time of MCPs, they
@@ -150,11 +150,39 @@ studied using light signals injected by a picosecond laser.
 \input{lasertiming.tex}  
 %
 %
+
+\section{Discussion} 
+In our previous study~\cite{Anderson:2015gha}, we achieved
+a time resolution of $110$~ps for $32$~GeV electromagnetic showers using
+DSB-doped WLS fibers for light readout at both ends of the fiber. The two main
+goals achieved in the present study are to confirm similar or slightly improved
+timing performance using photodetectors that are economically scalable to
+collider experiment size and WLS fibers that can maintain its transparency under
+the harsh radiation conditions of the HL-LHC. Using commercially available SiPMs
+that are economically scalable, we achieved a time resolution of $75$~ps
+($40$~ps) for $50$~GeV ($200$~GeV) electromagnetic showers using DSB-doped WLS
+fibers read out only at a single end of the fiber. This represents a $15\%$
+improvement over the previous result, with the possibility for additional
+improvement if light is read out from both ends of the WLS fibers. 
+
+Using quartz capillaries filled with a DSB-based liquid wavelength-shifting
+agent, specially designed to survive the high radiation environment of the
+HL-LHC, we achieved a time resolution of $130$~ps ($75$~ps) for $50$~GeV
+($200$~GeV) electromagnetic showers. The difference in timing resolution is
+solely due to degraded signal-to-noise ratio as the light collection efficiency
+is worse for the quartz capillaries. This result demonstrates feasibility
+towards a radiation-hard solution for the future. Based on these results, we are
+optimistic that further work on improving the optical coupling, improving the
+light collection efficiency of the quartz capillaries by optimizing the
+dimensions and the composition of the liquid WLS agent, and improving the noise
+properties of the SiPMs can yield further improved timing performance. 
+
 \input{summary.tex}  
 %
 %
 
-\section{Acknowledgements} Supported by funding from California Institute of
+\section{Acknowledgements} 
+Supported by funding from California Institute of
 Technology High Energy Physics under Contract DE-SC0011925 with the United
 States Department of Energy. We thank the CERN test-beam facilities personnel for
 excellent beam conditions during our test-beam time. We also thank Paolo
