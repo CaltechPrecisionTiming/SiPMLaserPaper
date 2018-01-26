@@ -1,4 +1,4 @@
-void PlotSiPMRiseTres()
+void PlotShashlikTimeResolutionVsRiseTime()
 {
 
  TFile *_file0 = TFile::Open("SiPMdata.root");
