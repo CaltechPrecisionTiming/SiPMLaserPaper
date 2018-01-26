@@ -1,12 +1,14 @@
 \section{Setup and Experimental Apparatus }
 \label{sec:setup}
 
-We performed measurements of SiPM properties in the laboratory at Caltech using
+We performed measurements of SiPM properties in the laboratory using
 signals from a class 3R PiLas laser which produces light at a wavelength of
 $407$~nm. Beam measurements were performed at the H4 beam-line of the CERN
 North-Area test-beam facility, which provides secondary beams of energies
-ranging between $20$~GeV and $400$~GeV. The beams are composed of a mixture of
-electrons and pions. The electron fraction in the beam is typically around 75\%.
+ranging between $20$~GeV and $400$~GeV. Electrons can be provided from tertiary beams up to 
+$250$~GeV with acceptable efficiency. The beams are composed of a mixture of
+electrons and pions. The electron fraction in the beam is typically larger than 
+$75\%$ and close to $100\%$ for beam energy above $100$~GeV.
 
 The data acquisition (DAQ) system uses a CAEN V1742 switched capacitor digitizer
 based on the DRS4 chip~\cite{DRS4}, whose electronic time resolution has been
@@ -20,22 +22,21 @@ order to measure the time resolution of the SiPM signals.
 
 \subsection{Setup for Laser-based SiPM Timing Measurements}
 
-SiPMs are mounted on a printed circuit board (PCB) with the
-circuit shown in Figure~\ref{fig:Circuit}. The high-pass filter is used to 
-decrease the rise-time of signal pulses by restricting to high frequency
-signals only, sometimes referred to as ``clipping''. As a consequence, 
-the resulting signal pulse will be smaller in amplitude.
-The SiPMs are mechanically attached to an
-optical breadboard enclosed within a box lined with copper foil for RF
-shielding. The laser is injected via a light-guide fiber mounted on an optical
-holder. The laser beam is immediately split by a 50/50 beam splitter and half of
-the light is directed onto the MCP-PMT while the other half of the light is
-directed onto the SiPM under test. A photograph of the setup is shown in
-Figure~\ref{fig:laserSetup}. The Photek-240 MCP-PMT is used as the reference
-time detector whose time resolution has been measured to be below $7$~ps for
-beam particles~\cite{MCPShowerMaxPaper}. To cover a large range of laser beam
-intensity, neutral density (ND) filters with ND number between 0.2 and 2.4 are
-placed between the beam splitter and the SiPM under test.
+SiPMs are mounted on a printed circuit board (PCB) with the circuit shown in
+Figure~\ref{fig:Circuit}. The high-pass filter is used to decrease the rise-time
+of signal pulses by removing low-frequency components of the signal pulse and is
+sometimes referred to as ``clipping''. As a consequence, the resulting signal
+pulse will be smaller in amplitude and will have a faster rise-time. The SiPMs
+are mechanically attached to an optical breadboard enclosed within a box lined
+with copper foil for RF shielding. The laser is injected via a light-guide fiber
+mounted on an optical holder. The laser beam is immediately split by a 50/50
+beam splitter and half of the light is directed onto the MCP-PMT while the other
+half of the light is directed onto the SiPM under test. A photograph of the
+setup is shown in Figure~\ref{fig:laserSetup}. The Photek-240 MCP-PMT is used as
+the reference time detector whose time resolution has been measured to be below
+$7$~ps for beam particles~\cite{MCPShowerMaxPaper}. To cover a large range of
+laser beam intensity, neutral density (ND) filters with ND number between 0.2
+and 2.4 are placed between the beam splitter and the SiPM under test.
 
 \begin{figure}[htbp]
 \centering
@@ -49,7 +50,7 @@ placed between the beam splitter and the SiPM under test.
 %Figure: Diagram of detector elements
 \begin{figure}[htbp] 
 \centering
-\includegraphics[width=0.80\textwidth]{figures/SiPMSetup1.pdf} 
+\includegraphics[width=0.70\textwidth]{figures/SiPMSetup1.pdf} 
 \caption{Photograph of the Laser-based SiPM timing measurement setup.} 
 \label{fig:laserSetup} 
 \end{figure} 
@@ -73,7 +74,7 @@ of Hamamatsu SiPMs with 10, 15 and 25~$\mu$m pixel size and $1\times
 1$~$\mathrm{mm}^{2}$ and $3\times 3$~$\mathrm{mm}^{2}$ sensor
 size~\cite{hamamatsuMPPC}. The SiPMs are all read out with a DRS digitizer
 through the clipping circuit shown above in Figure~\ref{fig:Circuit}. The same
-clipping circuit as shown in Fig~\ref{fig:Circuit} is used for all four SiPMs.
+clipping circuit is used for all four SiPMs.
 We do not amplify the output signal of the SiPMs, only exploiting the very large
 light yield of the LYSO scintillator and the intrinsic amplification of the
 SiPMs. A labeled photograph of the setup in the H4 beamline is shown in
@@ -84,7 +85,7 @@ references~\cite{shashlik1}~and~\cite{shashlik2}.
 %Figure: Diagram of detector elements
 \begin{figure}[htbp] 
 \centering
-\includegraphics[width=0.80\textwidth]{figures/ShashlikFiberSetupSchematic} 
+\includegraphics[width=0.70\textwidth]{figures/ShashlikFiberSetupSchematic} 
 \caption{Schematic diagram of the testbeam experimental setup.} 
 \label{fig:TestbeamSchematic} 
 \end{figure} 
@@ -92,7 +93,7 @@ references~\cite{shashlik1}~and~\cite{shashlik2}.
 %Figure: Diagram of detector elements
 \begin{figure}[htbp] 
 \centering
-\includegraphics[width=0.95\textwidth]{figures/ShashlikTBSetupDiagram} 
+\includegraphics[width=0.70\textwidth]{figures/ShashlikTBSetupDiagram} 
 \caption{Photograph of the timing measurement setup in the H4 beamline.} 
 \label{fig:TestbeamSetup} 
 \end{figure} 
@@ -117,14 +118,14 @@ The time stamp for the reference counter and calorimeter cell is extracted
 from a Gaussian fit to the peak and a linear fit to the rising edge, 
 respectively, as described below in Section~\ref{sec:reco}.
 
-We measure the timing performance of the calorimeter cell with high energy
-electrons in a range between $20$~GeV~and~$200$~GeV in the CERN North Area
-test-beam. The impact point of the electrons onto the calorimeter cell is
-measured with a fiber hodoscope with a precision of better than $1$~mm. As
-timing measurements are affected by shower containment, we restrict the time
-measurements to events where shower containment is large. This is achieved by
-using events where the beam particle impacts in the center of
-the calorimeter cell within a restricted area between
+We measure the timing performance of the calorimeter cell with high energy beams
+in a range between 20 GeV and 200 GeV. Selection cuts on the signal amplitude in the Shashlik cell
+suppresses the pion contamination in the beam. The impact point of the electrons
+onto the calorimeter cell is measured with a fiber hodoscope with a precision of
+better than $1$~mm. As timing measurements are affected by shower containment,
+we restrict the time measurements to events where shower containment is large.
+This is achieved by using events where the beam particle impacts in the center
+of the calorimeter cell within a restricted area between
 $2\times2$~$\mathrm{mm}^{2}$ and $6\times8$~$\mathrm{mm}^{2}$ depending on the
 exact setup. 
 
