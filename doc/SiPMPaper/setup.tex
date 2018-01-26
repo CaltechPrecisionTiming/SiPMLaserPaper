@@ -72,9 +72,10 @@ scintillation light from the LYSO plates is extracted with four
 wavelength-shifting (WLS) fibers. The fibers are coupled to four different types
 of Hamamatsu SiPMs with 10, 15 and 25~$\mu$m pixel size and $1\times
 1$~$\mathrm{mm}^{2}$ and $3\times 3$~$\mathrm{mm}^{2}$ sensor
-size~\cite{hamamatsuMPPC}. The SiPMs are all read out with a DRS digitizer
-through the clipping circuit shown above in Figure~\ref{fig:Circuit}. The same
-clipping circuit is used for all four SiPMs.
+size~\cite{hamamatsuMPPC}. SiPMs are mounted on a printed circuit board (PCB) with the 
+circuit shown in Figure~\ref{fig:Circuit}. The high-pass filter is used to decrease the rise-time of signal 
+pulses by removing low-frequency components of the signal pulse. As a consequence, the resulting 
+signal pulse will be smaller in amplitude and will have a faster rise-time.
 We do not amplify the output signal of the SiPMs, only exploiting the very large
 light yield of the LYSO scintillator and the intrinsic amplification of the
 SiPMs. A labeled photograph of the setup in the H4 beamline is shown in

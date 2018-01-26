@@ -7,7 +7,8 @@ we performed laser-based measurements for two types of SiPMs: a Hamamatsu
 S12571-015P Multi-Pixel Photon Counter (MPPC) with an area of $1\times
 1$~$\mathrm{mm}^{2}$ and pixel pitch size of $15$~$\mu$m, and a Hamamatsu
 S12572-25C MPPC with an area of $3\times 3$~$\mathrm{mm}^{2}$ and pixel pitch
-size of $25$~$\mu$m. Examples of the digitized waveforms for signals from both
+size of $25$~$\mu$m. These two devices capture the impact due to differences 
+in the pixel pitch size and the total area. Examples of the digitized waveforms for signals from both
 SiPMs are shown in Figure~\ref{fig:pulses}.
 
 \begin{figure}[htbp] 
@@ -15,13 +16,13 @@ SiPMs are shown in Figure~\ref{fig:pulses}.
 \includegraphics[width=0.49\textwidth]{figures/PulseShapeExample_1x1SiPM.pdf} 
 \includegraphics[width=0.49\textwidth]{figures/PulseShapeExample_3x3SiPM.pdf} 
 \caption{Digitized waveforms of the signals from the PiLas laser 
-in the S12571-015P and S12572-25C SiPMs.} 
+in the S12571-015P (left) and S12572-25C (right) SiPMs.} 
 \label{fig:pulses} 
 \end{figure} 
 
 Using several different ND filters we controlled the intensity of the photon 
 beam impinging upon the SiPMs under test and achieved a large dynamic range 
-of signal sizes ranging from a single incident photon to a few hundred. In 
+of input light intensity ranging from a single incident photon to a few hundred. In 
 Figure~\ref{fig:NPhotonPeaks}, we show the integrated charge distribution
 for two example scenarios from which we can clearly distinguish different peaks
 corresponding to different number of photoelectrons detected by the SiPMs.
@@ -30,7 +31,7 @@ corresponding to different number of photoelectrons detected by the SiPMs.
 \centering
 \includegraphics[width=0.49\textwidth]{figures/NPhotons1.pdf} 
 \includegraphics[width=0.49\textwidth]{figures/NPhotons2.pdf} 
-\caption{The distribution of integrated charge from the SiPM sensor for data 
+\caption{The distribution of integrated charge from the S12571-015P SiPM sensor for data 
 taken with an ND filter of 1.8 (left), and an ND filter of 1.4 (right). 
 A $10$~db attenuator has been used for the plot on the right. The peaks corresponding
 to different discrete numbers of photoelectrons detected by the SiPM is clearly
@@ -42,13 +43,15 @@ Using this setup, we measure the timestamps reconstructed from the SiPM signals
 with respect to the reference MCP-PMT timestamp over an ensemble of events
 triggered by the external laser trigger. The sigma parameter of a gaussian fit
 to this distribution is taken as the time resolution measurement.
-As the number of photons impinging on the SiPM can be clearly distinguished 
+As the number of photoelectrons detected can be clearly distinguished 
 based on the amplitude or charge collected, we can study the dependence of the 
-time resolution on the number of photons. These measurements are shown in 
+time resolution on the number of photoelectrons. These measurements are shown in 
 Figure~\ref{fig:TimeResolutionVsNPhotons}. The amplitude for a single
 photoelectron signal is estimated to be $0.6$~mV for the $1\times1$~$\mathrm{mm}^{2}$ 
 S12571-015P SiPM and $0.1$~mV for 
-the $3\times 3$~$\mathrm{mm}^{2}$ S12572-25C SiPM. Using these 
+the $3\times 3$~$\mathrm{mm}^{2}$ S12572-25C SiPM. 
+The data points are fitted to a functional form that includes a $1/N$ term to model 
+the electronic noise, and a $1/\sqrt{N}$ stochastic term. Using these 
 measurements, we can compare the time resolution of laser light signals on
 SiPMs from Figure~\ref{fig:TimeResolutionVsNPhotons} to the time resolution
 of electromagnetic shower signals from the WLS fiber in Figure~\ref{TimeResolution}
