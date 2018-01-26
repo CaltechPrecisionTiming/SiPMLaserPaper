@@ -1,4 +1,4 @@
-void PlotSiPMTresEnergy()
+void PlotShashlikTimeResolutionVsEnergy()
 {
 
 gStyle->SetOptStat(0);
@@ -190,9 +190,9 @@ Y11ch4->SetMarkerSize(1.2);
  DSB1ch3->SetMarkerStyle(34);
  DSB1ch4->SetMarkerStyle(22);
  DSB1ch1->SetMarkerColor(kBlack);
- DSB1ch2->SetMarkerColor(kBlue);
- DSB1ch3->SetMarkerColor(kRed);
- DSB1ch4->SetMarkerColor(kGreen+2);
+ DSB1ch2->SetMarkerColor(kRed);
+ DSB1ch3->SetMarkerColor(kGreen+2);
+ DSB1ch4->SetMarkerColor(kBlue);
 
  DSB1ch1->GetYaxis()->SetRangeUser(0,200);
  DSB1ch1->Draw();
@@ -219,7 +219,6 @@ Y11ch4->SetMarkerSize(1.2);
  c1->SaveAs("ShashlikTimeResolutionVsEnergy_DSB.C");
 
  
- return;
  //*****************************
  //Capillaries Plot
  //*****************************
@@ -244,9 +243,9 @@ Y11ch4->SetMarkerSize(1.2);
  Capch3->SetMarkerStyle(34);
  Capch4->SetMarkerStyle(22);
  Capch1->SetMarkerColor(kBlack);
- Capch2->SetMarkerColor(kBlue);
- Capch3->SetMarkerColor(kRed);
- Capch4->SetMarkerColor(kGreen+2);
+ Capch2->SetMarkerColor(kRed);
+ Capch3->SetMarkerColor(kGreen+2);
+ Capch4->SetMarkerColor(kBlue);
 
  Capch1->SetTitle("");
  Capch1->GetXaxis()->SetTitle("Energy [GeV]");
