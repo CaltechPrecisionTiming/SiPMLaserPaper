@@ -29,25 +29,14 @@ squares. }
 \end{figure}
 
 
-
 As the time measurement precision depends on the rise time of the pulse we also
 measure the time resolution as a function of the rise time for signals observed
 in the calorimeter cell shown in Figure~\ref{RiseTime}. Each data point corresponds
-to a measurement of mean risetime for datasets taken using different beam energy.
-The rise time of these
-signals are driven by the time constants of the wavelength shifter as
-demonstrated in reference~\cite{Anderson:2015gha}. For the data presented here,
-using SiPMs as photodetectors, we observe that the rise time ranges between
-$1.4$~ns and $6$~ns and that the time resolution improves roughly proportional
-to the rise time of the signals. In our previous studies of the same calorimeter 
-cell using MCPs as photodetectors~\cite{Anderson:2015gha}, the rise time was measured to be around 
-$3.0$~ns. The intrinsic rise time for light signals detected by these SiPMs was
-measured to be $0.65$~ns using a fast laser described in Sec~\ref{sec:lasertiming} below. 
-Additionally, we find that the rise time decreases with increasing amplitude, which was
-not observed in our previous studies using MCPs as photodetectors. We attribute 
-this effect to the fact that there are so many scintillation photons reaching the SiPM that
-the signal is in the non-linear SiPM saturation regime. As a result the signal 
-appears to reach its maximum faster. 
+to a measurement of mean rise time for datasets taken using different beam energy.
+The capacitance of the high-pass filter for the 
+$3\times3$~$\mathrm{mm}^{2}$ SiPM with $25$~$\mu$m pixel size is significantly 
+larger than the capacitance for the other three SiPMs, resulting in signals with 
+larger amplitude but also larger rise time.
 
 \begin{figure}[!htb]
 \centering
@@ -55,6 +44,32 @@ appears to reach its maximum faster.
 \caption{\label{RiseTime}Time resolution is measured as a function of the rise time
 for the four different SiPMs. The data recorded with the DSB WLS fibers and the
 quartz capillaries are distinguished as dots and squares, respectively. }
+\end{figure}
+
+In our previous study~\cite{Anderson:2015gha} that used MCPs as photodetectors,
+the rise time was measured to be about $3.0$~ns and did not have any dependence
+on the signal amplitude. The very fast rise time of less than 150 ps of the MCP
+and its signal amplitude linearity implied that the rise time was dominated by
+the time constant of the wavelength shifter. In contrast, for the data presented
+here using SiPMs as photodetectors, we observe that the rise time varies between
+$1.4$~ns and $6$~ns. We attribute this effect to the fact that
+there are so many scintillation photons reaching the SiPM that the signal is in
+the non-linear saturation regime of the SiPM. As a result the signal appears to reach
+its maximum faster. This effect is reproduced by a simple simulation where we 
+take a scintillation light pulse with a rise time of $3$~ns impinging upon a
+$1\times1$~$\mathrm{mm}^{2}$ SiPM with $10$~$\mu$m pixel size and 
+simulate a dead time of $5$~ns for each pixel. The resulting rise time as a function
+of light input is shown in Figure~\ref{RiseTimeSimulation}, and shows a 
+decreasing rise time as a the amount of light increases.
+
+\begin{figure}[!htb]
+\centering
+\includegraphics[width=0.99\textwidth]{figures/RisetimeSimulation.pdf}
+\caption{\label{RiseTimeSimulation} We simulate a scintillation light pulse 
+with a rise time of $3$~ns impinging upon a $1\times1$~$\mathrm{mm}^{2}$ 
+SiPM with $10$~$\mu$m pixel size where each pixel has a dead time 
+of $5$~ns. The resulting rise time of the full signal pulse is plotted as a function
+of the amount of input scintillation light.}
 \end{figure}
 
 We show the time resolution measured as a function of the beam energy for
