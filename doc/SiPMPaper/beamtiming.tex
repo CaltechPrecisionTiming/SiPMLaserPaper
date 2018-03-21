@@ -1,17 +1,28 @@
 \subsection{Timing Performance Results from Calorimeter with SiPM Readout}
 \label{sec:beamtiming}
 
-Four different SiPMs are used to read out the four light fibers. As the SiPMs
-and fibers each have different gain and light collection efficiency, the signal
-amplitudes vary for the four different channels. In Figure~\ref{TimeResolution}
-we show the time resolution of the four individual fibers as a function of their
-respective signal amplitudes for both the DSB-doped fibers and the DSB-filled
-quartz capillaries. Each data point corresponds to the mean measured 
-signal amplitude and time resolution from a dataset 
-with different beam energy. We observe that the time resolution improves as the
-beam energy and signal amplitude increases. The best time resolution per fiber is around
+Four different SiPMs are used to read out the four light fibers. Data are taken with electron
+beam energy at $20$, $50$, $100$, $150$, and $200$~GeV, and the time resolution
+measured for each beam energy is plotted as a function of the mean signal
+amplitude measured in the same dataset in Figure~\ref{TimeResolution}. We show
+the time resolution of the four individual fibers separately as a function of their
+respective mean signal amplitudes for both the DSB-doped fibers and the DSB-filled
+quartz capillaries. The mean signal amplitude increases as the beam energy 
+increases. We observe that the time resolution improves as the 
+signal amplitude (or beam energy) increases. The best time resolution per fiber is around
 $60$~ps for all of the channels, but the amplitude at which this performance is
-achieved varies. Another important observation is that the time resolution
+achieved varies. 
+
+The variation of signal amplitudes is due to variations in the operational gain
+of the four SiPMs. As discussed in Section\~ref{sec:LYSOSiPMSetup}, each SiPM
+was operated as a bias voltage of $70$~V. As the breakdown voltages for each
+SiPM varies slightly, the over-voltages also vary resulting in significant
+differences in gain. Furthermore, the SiPM-to-fiber coupling may not be perfectly
+identical, resulting in a small variation of light collection efficiency. The combination of these effects
+explain why the best time resolutions is achieved at different signal amplitudes in the four
+different channels.
+
+Another important observation is that the time resolution
 measured from the WLS fibers fall on the same curve as the time
 resolution measured from the quartz capillaries. We conclude that the method of
 light extraction impacts the time resolution only through its effect on the
@@ -31,16 +42,19 @@ squares. }
 
 As the time measurement precision depends on the rise time of the pulse we also
 measure the time resolution as a function of the rise time for signals observed
-in the calorimeter cell shown in Figure~\ref{RiseTime}. Each data point corresponds
-to a measurement of mean rise time for datasets taken using different beam energy.
-The capacitance of the high-pass filter for the 
-$3\times3$~$\mathrm{mm}^{2}$ SiPM with $25$~$\mu$m pixel size is significantly 
-larger than the capacitance for the other three SiPMs, resulting in signals with 
-larger amplitude but also larger rise time.
+in the calorimeter cell shown in Figure~\ref{RiseTime}. As in
+Figure~\ref{TimeResolution}, the data points correspond to measurements of the
+time resolution and mean rise time for datasets collected using electron beam
+energies ranging from $20$~GeV to $200$~GeV. The capacitance of the high-pass
+filter for the $3\times3$~$\mathrm{mm}^{2}$ SiPM with $25$~$\mu$m pixel size is
+$100$~pF, which is significantly larger than the capacitance for the other three
+SiPMs ($15$~pF), resulting in signals with larger amplitude but also larger rise
+time.
 
 \begin{figure}[!htb]
 \centering
-\includegraphics[width=0.99\textwidth]{figures/ShashlikTimeResolutionVsRiseTime.pdf}
+\includegraphics[width=0.48\textwidth]{figures/ShashlikTimeResolutionVsRiseTime.pdf}
+\includegraphics[width=0.51\textwidth]{figures/ShashlikRiseTimeVsAmplitude.pdf}
 \caption{\label{RiseTime}Time resolution is measured as a function of the rise time
 for the four different SiPMs. The data recorded with the DSB WLS fibers and the
 quartz capillaries are distinguished as dots and squares, respectively. }
