@@ -42,7 +42,7 @@ DSB1ch4->SetMarkerSize(1.2);
   int n5 =data->Draw("tree_Cap_ch1_rise*0.8:1000*tree_Cap_time_1","");
  TGraph *Capch1 = new TGraph(n5,data->GetV1(),data->GetV2()); 
 Capch1->SetMarkerColor(kBlack);
-Capch1->SetMarkerStyle(21);
+Capch1->SetMarkerStyle(34);
 Capch1->SetMarkerSize(1.0);
 
 
@@ -50,7 +50,7 @@ Capch1->SetMarkerSize(1.0);
   int n6 =data->Draw("tree_Cap_ch2_rise*0.8:1000*tree_Cap_time_2","");
  TGraph *Capch2 = new TGraph(n6,data->GetV1(),data->GetV2()); 
 Capch2->SetMarkerColor(kRed);
-Capch2->SetMarkerStyle(21);
+Capch2->SetMarkerStyle(34);
 Capch2->SetMarkerSize(1.0);
 
 
@@ -59,7 +59,7 @@ Capch2->SetMarkerSize(1.0);
   int n7 =data->Draw("tree_Cap_ch3_rise*0.8:1000*tree_Cap_time_3","");
  TGraph *Capch3 = new TGraph(n7,data->GetV1(),data->GetV2()); 
 Capch3->SetMarkerColor(kGreen+2);
-Capch3->SetMarkerStyle(21);
+Capch3->SetMarkerStyle(34);
 Capch3->SetMarkerSize(1.0);
 
  
@@ -67,7 +67,7 @@ Capch3->SetMarkerSize(1.0);
   int n8 =data->Draw("tree_Cap_ch4_rise*0.8:1000*tree_Cap_time_4","");
  TGraph *Capch4 = new TGraph(n8,data->GetV1(),data->GetV2()); 
 Capch4->SetMarkerColor(kBlue);
-Capch4->SetMarkerStyle(21);
+Capch4->SetMarkerStyle(34);
 Capch4->SetMarkerSize(1.0);
 
 
@@ -178,16 +178,16 @@ DSB1ch4->SetMarkerSize(1.2);
   int n5 =data->Draw("tree_Cap_ch1_rise*0.8:1000*tree_Cap_time_1","");
  TGraph *Capch1 = new TGraph(n5,data->GetV1(),data->GetV2()); 
 Capch1->SetMarkerColor(kBlack);
-Capch1->SetMarkerStyle(21);
-Capch1->SetMarkerSize(1.0);
+Capch1->SetMarkerStyle(34);
+Capch1->SetMarkerSize(1.2);
 
 
 
   int n6 =data->Draw("tree_Cap_ch2_rise*0.8:1000*tree_Cap_time_2","");
  TGraph *Capch2 = new TGraph(n6,data->GetV1(),data->GetV2()); 
 Capch2->SetMarkerColor(kRed);
-Capch2->SetMarkerStyle(21);
-Capch2->SetMarkerSize(1.0);
+Capch2->SetMarkerStyle(34);
+Capch2->SetMarkerSize(1.2);
 
 
  
@@ -195,16 +195,16 @@ Capch2->SetMarkerSize(1.0);
   int n7 =data->Draw("tree_Cap_ch3_rise*0.8:1000*tree_Cap_time_3","");
  TGraph *Capch3 = new TGraph(n7,data->GetV1(),data->GetV2()); 
 Capch3->SetMarkerColor(kGreen+2);
-Capch3->SetMarkerStyle(21);
-Capch3->SetMarkerSize(1.0);
+Capch3->SetMarkerStyle(34);
+Capch3->SetMarkerSize(1.2);
 
  
 
   int n8 =data->Draw("tree_Cap_ch4_rise*0.8:1000*tree_Cap_time_4","");
  TGraph *Capch4 = new TGraph(n8,data->GetV1(),data->GetV2()); 
 Capch4->SetMarkerColor(kBlue);
-Capch4->SetMarkerStyle(21);
-Capch4->SetMarkerSize(1.0);
+Capch4->SetMarkerStyle(34);
+Capch4->SetMarkerSize(1.2);
 
 
 // /*  int n9 =data->Draw("1000*tree_Laser_ch1_amp:tree_Laser_ch1_rise","");
@@ -230,10 +230,10 @@ Capch4->SetMarkerSize(1.0);
 
   TMultiGraph *multi = new TMultiGraph();
   multi->Add(DSB1ch2);
-    multi->Add(DSB1ch1);
+     multi->Add(DSB1ch1);
     multi->Add(DSB1ch3);
     multi->Add(DSB1ch4);
-    multi->Add(Capch1);
+     multi->Add(Capch1);
     multi->Add(Capch2);
     multi->Add(Capch3);
     multi->Add(Capch4);
@@ -241,6 +241,7 @@ Capch4->SetMarkerSize(1.0);
     // multi->Add(Laserch4);
     multi->Draw("ap");
 
+    // multi->SetMaximum(1700);
     multi->SetMaximum(700);
     multi->SetMinimum(0);
     multi->GetXaxis()->SetLimits(0,8);
