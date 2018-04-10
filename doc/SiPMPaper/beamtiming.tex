@@ -15,7 +15,7 @@ achieved varies.
 
 The variation of signal amplitudes is due to variations in the operational gain
 of the four SiPMs. As discussed in Section~\ref{sec:LYSOSiPMSetup}, each SiPM
-was operated as a bias voltage of $70$~V. As the breakdown voltages for each
+was operated at a bias voltage of $70$~V. As the breakdown voltages for each
 SiPM varies slightly, the over-voltages also vary resulting in significant
 differences in gain. Furthermore, the SiPM-to-fiber coupling may not be perfectly
 identical, resulting in a small variation of light collection efficiency. The combination of these effects
@@ -72,7 +72,10 @@ the non-linear saturation regime of the SiPM. As a result the signal appears to 
 its maximum faster. This effect is reproduced by a simple simulation where we 
 take a scintillation light pulse with a rise time of $3$~ns impinging upon a
 $1\times1$~$\mathrm{mm}^{2}$ SiPM with $10$~$\mu$m pixel size and 
-simulate a dead time of $5$~ns for each pixel. The resulting rise time as a function
+simulate a dead time that is much larger than the rise time, on the order of
+a few tens to one hundred nanoseconds.
+
+of $5$~ns for each pixel. The resulting rise time as a function
 of light input is shown in Figure~\ref{RiseTimeSimulation}, and shows a 
 decreasing rise time as the amount of light increases.
 

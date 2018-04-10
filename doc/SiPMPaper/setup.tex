@@ -23,20 +23,22 @@ order to measure the time resolution of the SiPM signals.
 \subsection{Setup for Laser-based SiPM Timing Measurements}
 
 SiPMs are mounted on a printed circuit board (PCB) with the circuit shown in
-Figure~\ref{fig:Circuit}. The high-pass filter is used to decrease the rise-time
+Figure~\ref{fig:Circuit}. The high-pass filter is used to decrease the rise time
 of signal pulses by removing low-frequency components of the signal pulse. As a
 consequence, the resulting signal pulse will be smaller in amplitude and will
-have a faster rise-time. The SiPMs are mechanically attached to an optical
-breadboard enclosed within a box lined with copper foil for RF shielding. The
-laser is injected via a light guide fiber mounted on an optical holder. The
-laser beam is immediately split by a 50/50 beam splitter and half of the light
-is directed onto the MCP-PMT while the other half of the light is directed onto
-the SiPM under test. A photograph of the setup is shown in
-Figure~\ref{fig:laserSetup}. The Photek-240 MCP-PMT is used as the reference
-time detector whose time resolution has been measured to be below $7$~ps for
-beam particles~\cite{MCPShowerMaxPaper}. To cover a large range of laser beam
-intensity, neutral density (ND) filters with ND number between 0.2 and 2.4 are
-placed between the beam splitter and the SiPM under test.
+have a faster rise time. A high-pass filter that reduces the rise time from
+$10$~ns to $2$~ns will reduce the signal amplitude from $100$~mV to $15$~mV. The
+SiPMs are mechanically attached to an optical breadboard enclosed within a box
+lined with copper foil for RF shielding. The laser is injected via a light guide
+fiber mounted on an optical holder. The laser beam is immediately split by a
+50/50 beam splitter and half of the light is directed onto the MCP-PMT while the
+other half of the light is directed onto the SiPM under test. A photograph of
+the setup is shown in Figure~\ref{fig:laserSetup}. The Photek-240 MCP-PMT is
+used as the reference time detector whose time resolution has been measured to
+be below $7$~ps for beam particles~\cite{MCPShowerMaxPaper}. To cover a large
+range of laser beam intensity, neutral density (ND) filters with ND number
+between 0.2 and 2.4 are placed between the beam splitter and the SiPM under
+test.
 
 \begin{figure}[htbp]
 \centering
@@ -73,9 +75,9 @@ wavelength-shifting (WLS) fibers with $1$~mm diameter. The fibers are coupled to
 of Hamamatsu SiPMs with 10, 15 and 25~$\mu$m pixel size and $1\times
 1$~$\mathrm{mm}^{2}$ and $3\times 3$~$\mathrm{mm}^{2}$ sensor
 size~\cite{hamamatsuMPPC}. SiPMs are mounted on a printed circuit board (PCB) with the 
-circuit shown in Figure~\ref{fig:Circuit}. The high-pass filter is used to decrease the rise-time of signal 
+circuit shown in Figure~\ref{fig:Circuit}. The high-pass filter is used to decrease the rise time of signal 
 pulses by removing low-frequency components of the signal pulse. As a consequence, the resulting 
-signal pulse will be smaller in amplitude and will have a faster rise-time.
+signal pulse will be smaller in amplitude and will have a faster rise time.
 We do not amplify the output signal of the SiPMs, only exploiting the very large
 light yield of the LYSO scintillator and the intrinsic amplification of the
 SiPMs. All four SiPMs were operated at a bias voltage of $70$~V, and due to the 
